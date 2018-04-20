@@ -25,7 +25,7 @@ module battle_module(
 	 input [6:0] player_hit,
 	 input [7:0] enemy_hit,
     input [7:0] key_in,
-    output reg [6:0] HP_player,
+    output reg [7:0] HP_player,
     output reg [7:0] HP_enemy,
     output [2:0] p_attack,
     output [2:0] e_attack
@@ -43,18 +43,9 @@ enemy_ran = $random%50;
 if (enemy_ran > 8'd50)
 enemy_ran = ~enemy_ran + 8'h01;
 
-HP_enemy = enemy_ran + 8'd50;
+HP_enemy = enemy_ran + 8'd51;
 
 boss_check = 1'b1;
-end
-
-always @(posedge clk_b, negedge clk_b) begin
-//accuracy
-a_pos_neg = $random%10;
-if (a_pos_neg < 4'd10)
-accuracy = a_pos_neg;
-else
-accuracy = ~a_pos_neg + 7'h01;
 end
 
 always @(posedge clk_b)
@@ -66,17 +57,6 @@ HP_enemy = 8'd150;  //150 HP Boss
 boss_check = 1'b0;
 end
 
-
-//attack
-//if (key_in == 8'd1 && accuracy > 4'd0)
-////HP_enemy = HP_enemy - 8'd10;
-//else if (key_in == 8'd2 && accuracy > 4'd1)
-////HP_enemy = HP_enemy - 8'd20;
-//else if (key_in == 8'd3 && accuracy > 4'd2)
-////HP_enemy = HP_enemy - 8'd30;
-//else if (key_in == 8'd4 && accuracy > 4'd3)
-////HP_enemy = HP_enemy - 8'd40;
-//else if (key_in == 8'd0)
 
 end
 endmodule
