@@ -1,157 +1,88 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
-// 
-// Create Date:    21:04:00 03/24/2018 
-// Design Name: 
-// Module Name:    game_engin 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
+// Engineer:
+//
+// Create Date:   19:09:16 04/20/2018
+// Design Name:   game_engin
+// Module Name:   X:/Desktop/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/TB_gameengine.v
+// Project Name:  RPG
+// Target Device:  
+// Tool versions:  
 // Description: 
 //
-// Dependencies: 
+// Verilog Test Fixture created by ISE for module: game_engin
 //
-// Revision: 
+// Dependencies:
+// 
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
-module game_engin( input collision_detected, // to start the battle
-						 input [1:0] player_choice, // to choose attack type
-						 input [1:0] enemy_choice,
-						 output [6:0] player_HB, //player's health condition to be shown on the monitor
-						 output [6:0] enemy_HB,
-						 output [4:0] player_remained_sword,//punchs and kicks are infinite 
-						 output [4:0] player_remained_baseballbat,//needed to be shown on the screen
-						 output [4:0] enemy_remained_sword,
-						 output [4:0] enemy_remained_baseballbat,
-						 output player_win,
-						 output enemy_win
-    );
+// Additional Comments:
+// 
+////////////////////////////////////////////////////////////////////////////////
 
+module TB_gameengine;
 
-parameter P=2'b00, K=2'b01, S=2'b10, B=2'b11;
-///////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////These initial numbers can be changed/////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
+	// Inputs
+	reg clk;
+	reg collision_detected;
+	reg [1:0] player_choice;
+	reg [1:0] enemy_choice;
+	reg player_turn;
+	reg attacker_turn;
 
-initial
-begin
-player_HB = 7'd100;
-enemy_HB = 7'd100;
-end
+	// Outputs
+	wire [7:0] player_HB;
+	wire [7:0] enemy_HB;
+	wire [4:0] player_remained_sword;
+	wire [4:0] player_remained_baseballbat;
+	wire [4:0] enemy_remained_sword;
+	wire [4:0] enemy_remained_baseballbat;
+	wire player_win;
+	wire enemy_win;
 
+	// Instantiate the Unit Under Test (UUT)
+	game_engin uut (
+		.clk(clk), 
+		.collision_detected(collision_detected), 
+		.player_choice(player_choice), 
+		.enemy_choice(enemy_choice), 
+		.player_turn(player_turn), 
+		.attacker_turn(attacker_turn), 
+		.player_HB(player_HB), 
+		.enemy_HB(enemy_HB), 
+		.player_remained_sword(player_remained_sword), 
+		.player_remained_baseballbat(player_remained_baseballbat), 
+		.enemy_remained_sword(enemy_remained_sword), 
+		.enemy_remained_baseballbat(enemy_remained_baseballbat), 
+		.player_win(player_win), 
+		.enemy_win(enemy_win)
+	);
 
-initial
-begin 
-player_remained_sword = 5'd4;
-player_remained_baseballbat = 5'd3;
+	initial begin
+		// Initialize Inputs
+		clk = 0;
+		collision_detected = 0;
+		player_choice = 0;
+		enemy_choice = 0;
+		player_turn = 0;
+		attacker_turn = 0;
 
-enemy_remained_sword = 5'd4;
-enemy_remained_baseballbat = 5'd3;
-end
-
-//Full Health Bar is 100
-//We need to deciede on these numbers
-//assign Punch_Accuracy = 100; 
-//assign Puch_Power = 5; 
-//assign Kick_Accuracy = 80;
-//assign Kick_Power = 10;
-//assign Sword_Accuracy = 40;
-//assign Sword_Power = 20;
-//assign BaseballBat_Accuracy = 30;
-//assign BaseballBat_Power = 40;
-
-//Strength levels should have overlap to to prevent the attackers from using different attack types in their power order
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-always @(posedge clk)
-begin
-if (player_HB == 0)
-		enemy_win = 1'b1;
-else if (enemy_HB == 0)
-		player_win = 1'b1;
-end
-///////////////////////////////////////////////////////////////////////////////////////////////////
-always @(posedge clk)
-begin
-if(collision_detected == 1)
-begin
-		case (player_choice)
+		// Wait 100 ns for global reset to finish
+		#100;
+        player_choice = 2'b11;
+		  collision_detected = 1;
+		  player_turn = 1;
+		// Add stimulus here
 		
-			P: 
-				
-					enemy_HB = enemy_HB - Puch_Power;
-			
-			K:
-				
-					enemy_HB = enemy_HB - Kick_Power;
-
+		#100
+			enemy_choice = 1;
+			enemy_choice = 2'b10;
+	end
 	
-			S:begin
-				if (player_remained_sword > 0)
-				begin
-
-					enemy_HB = enemy_HB - Sword_Power;
-					player_remained_sword = player_remained_sword - 1;
-					
-				end
-			end
-			
-			B:begin
-				if (player_remained_baseballbat > 0)
-				begin
-					
-					enemy_HB = enemy_HB - BaseballBat_Power;
-					player_remained_baseballbat = player_remained_baseballbat - 1;
-
-				end
-			end
-		endcase
-end
-end
-//////////////////////////////////////some parts of the previous always block should be added here/////////////////////
-always @(posedge clk)
-begin
-if(collision_detected == 1)
-begin
-		case (enemy_choice)
-		
-			P: 
-					player_HB = player_HB - Puch_Power;
-			
-			K:
-				
-					player_HB = player_HB - Kick_Power;
-				
-	
-			S:begin
-				if (enemy_remained_sword > 0)
-				begin
-
-					player_HB = player_HB - Sword_Power;
-					enemy_remained_sword = enemy_remained_sword - 1;
-					
-				end
-			end
-			
-			B:begin
-				if (enemy_remained_baseballbat > 0)
-				begin
-					
-					player_HB = player_HB - BaseballBat_Power;
-					enemy_remained_baseballbat = enemy_remained_baseballbat - 1;
-
-				end
-			end
-		endcase
-end
-end
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
+	always 
+	#5 clk = !clk;
+      
 endmodule
 
