@@ -1,0 +1,116 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    19:34:11 04/20/2018 
+// Design Name: 
+// Module Name:    HP_module 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module HP_module(
+	 input clk,
+    input [1:0] attack_p,
+    input [1:0] attack_e,
+	 input att_e_en,
+	 input att_p_en,
+    output [7:0] HP_p,
+    output [7:0] HP_e,
+	 output HP_p_en,
+	 output HP_e_en
+    );
+//accuracy
+reg [3:0] a_pos_neg;
+reg [3:0] accuracy;
+always @(posedge clk, negedge clk) begin
+	a_pos_neg = $random%10;
+	if (a_pos_neg < 4'd10)
+		accuracy = a_pos_neg;
+	else
+		accuracy = ~a_pos_neg + 7'h01;
+end
+
+//HP Deduction
+always @(posedge clk) begin
+	if (att_e_en == 1'b1) begin
+		case (attack_e)
+			2'b00: begin
+			if (accuracy > 4'd0)
+			HP_e = 8'd10 + $random%3; // 8-12
+			else
+			HP_e = 8'd0;
+			end
+			
+			2'b01: begin
+			if (accuracy > 4'd1)
+			HP_e = 8'd20 + $random%5; // 16-24
+			else
+			HP_e = 8'd0;
+			end
+			
+			2'b10: begin
+			if (accuracy > 4'd2)
+			HP_e = 8'd30 + $random%7; // 24-36
+			else
+			HP_e = 8'd0;
+			end
+			
+			2'b11: begin
+			if (accuracy > 4'd3)
+			HP_e = 8'd40 + $random%9; // 32-48
+			else
+			HP_e = 8'd0;
+			end
+		endcase
+		end
+
+	if (att_p_en == 1'b1) begin
+		case (attack_p)
+			2'b00: begin
+			if (accuracy > 4'd0)
+			HP_p = 8'd10 + $random%3; // 8-12
+			else
+			HP_p = 8'd0;
+			end
+			
+			2'b01: begin
+			if (accuracy > 4'd1)
+			HP_p = 8'd20 + $random%5; // 16-24
+			else
+			HP_p = 8'd0;
+			end
+			
+			2'b10: begin
+			if (accuracy > 4'd2)
+			HP_p = 8'd30 + $random%7; // 24-36
+			else
+			HP_p = 8'd0;
+			end
+			
+			2'b11: begin
+			if (accuracy > 4'd3)
+			HP_p = 8'd40 + $random%9; // 32-48
+			else
+			HP_p = 8'd0;
+			end
+		endcase
+		end	
+		
+		if (att_p_en == 1'b0)
+		HP_p = 8'd0;
+		
+		if (att_e_en == 1'b1)
+		HP_e = 8'd0;
+		
+end
+endmodule
