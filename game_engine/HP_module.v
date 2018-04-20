@@ -6,22 +6,15 @@
 // Create Date:    19:34:11 04/20/2018 
 // Design Name: 
 // Module Name:    HP_module 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
+
+// Connect this Module to a battle module to test this. If the proper enable is active, an attack is executed, otherwise it is not.
+
 //
 //////////////////////////////////////////////////////////////////////////////////
 module HP_module(
 	 input clk,
-    input [1:0] attack_p,
-    input [1:0] attack_e,
+         input [1:0] attack_p,
+    	 input [1:0] attack_e,
 	 input att_e_en,
 	 input att_p_en,
     output reg [7:0] HP_p,
