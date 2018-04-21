@@ -11,8 +11,11 @@ On the rising edge of a collision detection, the player's HP reset to 100, and t
 $random% is used for the accuracy, enemy's HP, and for adjusting the strength of an attack by as much as 20% of its average value.
 
 Punch = 8-12 HP lost
+
 Kick = 16-24 HP lost
+
 Bat = 24-36 HP lost
+
 Sword = 32-48 HP lost
 
 The HP module and its testbench can show you how much HP is taken away from the player or enemy if an attack lands.
