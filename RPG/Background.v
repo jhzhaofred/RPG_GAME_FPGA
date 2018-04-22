@@ -31,5 +31,6 @@ flower f1 (
   .douta(flower_1) // output [7 : 0] douta
 );
 
-always@(posedge clk_1s) count = count + 1;
+always@(posedge clk_1s) 
+	count = count + 1'b1;
 endmodule

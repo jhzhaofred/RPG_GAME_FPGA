@@ -626,3 +626,378 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
 bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "vga_controller.ngc" vga_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_controller_map.ncd vga_controller.ngd vga_controller.pcf 
+par -w -intstyle ise -ol high -mt off vga_controller_map.ncd vga_controller.ncd vga_controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_controller.twx vga_controller.ncd -o vga_controller.twr vga_controller.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f vga_controller.ut vga_controller.ncd 
