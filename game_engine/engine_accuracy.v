@@ -19,6 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module engine_accuracy( input clk,
+		       input rst,
 						 input collision_detected, // to start the battle
 						 input [1:0] player_choice, // to choose attack type
 						 input [1:0] enemy_choice,
@@ -73,7 +74,7 @@ end
 
 //Strength levels should have overlap to to prevent the attackers from using different attack types in their power order
 
-//accuracy
+//accuracy and reset
 reg [3:0] a_pos_neg;
 reg [3:0] accuracy;
 always @(posedge clk, negedge clk) begin
@@ -82,6 +83,10 @@ always @(posedge clk, negedge clk) begin
 		accuracy = a_pos_neg;
 	else
 		accuracy = ~a_pos_neg + 7'h01;
+	if (rst == 1'b1) begin
+	player_HP = 8'd100;
+	enemy_HP = 8'd100;
+	end
 end
 
 
