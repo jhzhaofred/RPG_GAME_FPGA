@@ -65,17 +65,13 @@ engine_accuracy game_engine (
 //instantiation of vga
 vga_controller vga(    
         .clk(clk),   
-		  .keyclk(key_clk),		  
-		  .keyinput(key_data),
+	.keyclk(key_clk),		  
+	.keyinput(key_data),
         .rst(rst),
-		  .left(),
-		  .right(),
-		  .up(),
-		  .down(),
         .r(r),    
         .g(g),    
         .b(b),
-		  .led(key_out),
+	.led(key_out),
         .hs(hs),    
         .vs(vs)    
         );    
