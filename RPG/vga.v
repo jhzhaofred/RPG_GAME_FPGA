@@ -156,34 +156,13 @@
                 vcount <= vcount;    
         end   
 		  
-		  //Maze VGA control signals
-		  reg [4:0] mazeHorizontalCount = 5'd0; 
-		  reg [4:0] mazeVerticalCount = 5'd0;
-		  reg [4:0] matrixXLoc = 5'd0;
-		  reg [3:0] matrixYLoc = 4'd0;
 		  
 		  //VGA Color Select
         always @ (posedge pclk)    
         begin
-				//Display Maze
-				if(collisionMatrix[matrixYLoc * 20 + matrixXLoc]) begin
-					if(mazeHorizontalCount != 5'b11111) begin
-						r <= 3'b111;
-						g <= 3'b000;
-						b <= 2'b11;
-						
-						mazeHorizontalCount <= mazeHorizontalCount + 1'b1;
-					end
-					
-					else begin
-						matrixXLoc = matrixXLoc + 1'b1;
-						mazeHorizontalCount <= 1'b0;
-					end
-				
-				end
 				
 				//If we want to display Ash
-				else if(display_ash) begin
+				if(display_ash) begin
 					if(AshData == 8'b11111111) begin
 						r <= red;
 						g <= green;
@@ -210,8 +189,6 @@
 						b <= EnemyData[1:0];
 					end
 				end
-				
-				
 				
 				else begin
 					r <= red;

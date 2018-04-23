@@ -8,8 +8,8 @@ module Ranger(
     );
 	 
 	//Enemy initial positions here
-	reg [9:0] a_hpos = 263;
-   reg [9:0] a_vpos = 170;  
+	reg [9:0] a_hpos = 255;
+   reg [9:0] a_vpos = 240;  
 	
 	assign position = {a_hpos,a_vpos};
 	

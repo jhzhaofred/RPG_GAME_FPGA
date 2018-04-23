@@ -35,10 +35,8 @@ module collisionDetection(position, e_position, pblockposx, pblockposy, enemyCol
 		enemyCollide = 1'b0;
 	end
 	
-	assign pblockposx = position[19:10]/10'd16;
-	assign pblockposy = position[9:0]/10'd16;
-	
-	//assign wallCollide = collisionMatrix[pblockposy * 40 + pblockposx] ? 1'b1 : 1'b0;
+	assign pblockposx = position[19:10]/10'd32;
+	assign pblockposy = position[9:0]/10'd32;
 	
 	//Always at position change
 	always @ (position or e_position) begin
