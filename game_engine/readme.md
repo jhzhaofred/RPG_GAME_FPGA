@@ -1,4 +1,4 @@
-Feel free to download the game engine and test bench with and without accuracy included, or the HP_module and its testbench, which was integrated into the game engine modules.
+Feel free to download the current and previous versions of the game engine and test bench.  The old versions include and do not include accuracy included, or the HP_module and its testbench, which was integrated into the game engine modules.  The current version of the game engine, called game_engine.v, is different from engine_accuracy.v because it was redesigned for synthesizing purposes.  All but one of the always @ groups had to be removed because the module could not synthesize.  Now, it can be synthesized.
 
 With accuracy, the game becomes more challenging for the players (punch 90%, kick 80%, bat 70%, and sword 60%).
 
