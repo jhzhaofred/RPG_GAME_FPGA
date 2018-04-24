@@ -4,7 +4,8 @@ input					clk_in,
 input					rst_n_in,			
 input					key_clk,			
 input					key_data,				
-output	[7:0]		ascii			
+output	[7:0]		ascii,
+output key_break		
 );
  
 

@@ -27,6 +27,7 @@
 		  wire pclk;
 		  assign pclk = count[1];
 		  wire [8:0] voffset, hoffset, e_voffset, e_hoffset;
+		  reg key_break;
         
 		  assign vs = (vcount < 2) ? 1'b0 : 1'b1;
 		  
@@ -78,7 +79,7 @@
 			);
 					
 		  //Direction Control from Keyboard
-		  Keyboard_PS2 					keyboard(clk, 1, keyclk, keyinput, led);
+		  Keyboard_PS2 					keyboard(clk, 1, keyclk, keyinput, led, key_break);
 		  
 		  wire kleft, kright, kup, kdown;
 		  assign kleft = led == 8'h6b ? 1'b1 : 1'b0;
