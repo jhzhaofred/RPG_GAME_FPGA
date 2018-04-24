@@ -22,6 +22,7 @@ module GameTop(input clk,
 		  input keyclk,		  
 		  input keyinput,
         input rst,
+		  input [7:0] switch,
         output reg [2:0] r,    
         output reg [2:0] g,    
         output reg [1:0] b,
@@ -31,7 +32,7 @@ module GameTop(input clk,
 
 
 		//Game State
-		reg [1:0] gameState, nextState;
+		reg [1:0] gameState = 2'b00;
 		
 		//Red Select
 		wire [2:0] r0, r1, r2, r3;
@@ -48,7 +49,7 @@ module GameTop(input clk,
 		//VS Select
 		wire vs0, vs1, vs2, vs3;
 		
-		wire switchState, switchState0, switchState1, switchState2, switchState3, winBattle, winGame;
+		wire enemyCollide, switchState, switchState0, switchState1, switchState2, switchState3, winBattle, winGame;
 		
 		assign switchState = (switchState0 || switchState1 || switchState2 || switchState3);
 		
@@ -56,12 +57,12 @@ module GameTop(input clk,
 //State 0: Start Screen
 	//Disable all user input except for "Press Enter to Start"
 	//VGA output should be set to start screen VGA
-	 //vga_start					vga0(clk, keyclk, keyinput, rst, r0, g0, b0, , hs0, vs0, switchState0);
+	 start_screen 					s0(clk, rst, switch[6:0], r0, g0, b0, hs0, vs0);
 	
 //State 1: Maze Screen
 	//User inputs are arrow keys
 	//VGA is vga.v
-	vga_controller					vga1(clk, keyclk, keyinput, rst, r1, g1, b1, led, hs1, vs1);//, switchState1);
+	vga_controller					vga1(clk, keyclk, keyinput, rst, r1, g1, b1, led, hs1, vs1, enemyCollide);//, switchState1);
 	
 //State 2: Battle State
 	//User inputs are A W S D, J K L I for attack select, all others disabled
@@ -78,7 +79,14 @@ module GameTop(input clk,
 						b <= b0;
 						hs <= hs0;
 						vs <= vs0;
-						gameState <= 2'b01;
+							if(switch[7]) begin
+								gameState <= 2'b01;
+							end
+							
+							else begin
+								gameState <= 2'b00;
+							end
+						
 					 end
 			2'b01: begin
 						r <= r1;
@@ -86,7 +94,14 @@ module GameTop(input clk,
 						b <= b1;
 						hs <= hs1;
 						vs <= vs1;
-						gameState <= 2'b10;
+							if(enemyCollide) begin
+								gameState <= 2'b00;
+							end
+							
+							else begin
+								gameState <= 2'b01;
+							end
+						
 					 end
 			2'b10: begin
 						r <= r2;
@@ -111,8 +126,5 @@ module GameTop(input clk,
 						gameState <= 2'b00;
 					 end
 		endcase
-		
 	end
-
-
 endmodule
