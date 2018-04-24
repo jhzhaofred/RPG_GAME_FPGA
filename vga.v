@@ -22,26 +22,23 @@
 		  wire [2:0] red, green;
 		  wire [1:0] blue;
 		  reg [9:0] hcount, vcount; 
-		  reg [9:0] a_hpos, a_vpos, e_hpos, e_vpos;
+		  reg [9:0] a_hpos, a_vpos, e_hpos, e_vpos, e_hpos2, e_vpos2, e_hpos3, e_vpos3, e_hpos4, e_vpos4, e_hpos5, e_vpos5;
 		  
 		  wire pclk;
 		  assign pclk = count[1];
 		  wire [8:0] voffset, hoffset, e_voffset, e_hoffset;
+		  reg key_break;
         
 		  assign vs = (vcount < 2) ? 1'b0 : 1'b1;
-		  
-		  //House Position
-		  reg [9:0] house_hpos = 624; 
-		  reg [9:0] house_vpos = 81;
 		  
 		  reg [1:0] step = 0;		  
         reg [1:0] count;		  
         
-		  wire clk_1s;
+		  wire clk_1s, clk_0;
 		  
 		  //Sprite Select Wires and Memory Modules
-		  wire display_ash, display_enemy, display_house;
-		  wire [7:0] AshData, EnemyData, HouseData;
+		  wire display_ash, display_enemy, display_enemy2, display_enemy3, display_enemy4, display_enemy5;
+		  wire [7:0] AshData, EnemyData, EnemyData2, EnemyData3, EnemyData4, EnemyData5;
 		  reg [15:0] ranger_count = 0;
 		  reg [3:0] rangering = 0;
 		  
@@ -57,8 +54,32 @@
 			  .douta(EnemyData) // output [31 : 0] AshData
 			);
 			
+			Enemy rocket2(
+			  .clka(pclk), // input clka
+			  .addra((((vcount - e_vpos2) % 16 + e_voffset) * 48 + (hcount - e_hpos2 + e_hoffset)) * 1), // input [31 : 0] addra
+			  .douta(EnemyData2) // output [31 : 0] AshData
+			);
+			
+			Enemy rocket3(
+			  .clka(pclk), // input clka
+			  .addra((((vcount - e_vpos3) % 16 + e_voffset) * 48 + (hcount - e_hpos3 + e_hoffset)) * 1), // input [31 : 0] addra
+			  .douta(EnemyData3) // output [31 : 0] AshData
+			);
+			
+			Enemy rocket4(
+			  .clka(pclk), // input clka
+			  .addra((((vcount - e_vpos4) % 16 + e_voffset) * 48 + (hcount - e_hpos4 + e_hoffset)) * 1), // input [31 : 0] addra
+			  .douta(EnemyData4) // output [31 : 0] AshData
+			);
+			
+			Enemy rocket5(
+			  .clka(pclk), // input clka
+			  .addra((((vcount - e_vpos5) % 16 + e_voffset) * 48 + (hcount - e_hpos5 + e_hoffset)) * 1), // input [31 : 0] addra
+			  .douta(EnemyData5) // output [31 : 0] AshData
+			);
+					
 		  //Direction Control from Keyboard
-		  Keyboard_PS2 					keyboard(clk, 1, keyclk, keyinput, led);
+		  Keyboard_PS2 					keyboard(clk, 1, keyclk, keyinput, led, key_break);
 		  
 		  wire kleft, kright, kup, kdown;
 		  assign kleft = led == 8'h6b ? 1'b1 : 1'b0;
@@ -67,20 +88,22 @@
 		  assign kdown = led == 8'h72 ? 1'b1 : 1'b0;
 		  
 		  //Player and enemy position
-		  wire [19:0] position, e_position, e_position2, e_position3, e_position4;
+		  wire [19:0] position, e_position, e_position2, e_position3, e_position4, e_position5;
 		  
 		  //Sprite Display Control
 		  assign display_ash = (hcount - a_hpos <= 16 && hcount - a_hpos > 0 && vcount - a_vpos >= 0 && vcount - a_vpos < 16);
 		  assign display_enemy = (hcount - e_hpos <= 16 && hcount - e_hpos > 0 && vcount - e_vpos >= 0 && vcount - e_vpos < 16);
-		  assign display_house = 1'b0;	//(hcount - house_hpos <= 64 && hcount - house_hpos > 0 && vcount - house_vpos >= 0 && vcount - house_vpos < 48);
+		  assign display_enemy2 = (hcount - e_hpos2 <= 16 && hcount - e_hpos2 > 0 && vcount - e_vpos2 >= 0 && vcount - e_vpos2 < 16);
+		  assign display_enemy3 = (hcount - e_hpos3 <= 16 && hcount - e_hpos3 > 0 && vcount - e_vpos3 >= 0 && vcount - e_vpos3 < 16);
+		  assign display_enemy4 = (hcount - e_hpos4 <= 16 && hcount - e_hpos4 > 0 && vcount - e_vpos4 >= 0 && vcount - e_vpos4 < 16);
+		  assign display_enemy5 = (hcount - e_hpos5 <= 16 && hcount - e_hpos5 > 0 && vcount - e_vpos5 >= 0 && vcount - e_vpos5 < 16);
 		      
-		  //1 Second Clock
+		  //Clock Dividers
 		  clk_div_1s 						clk_d(clk, clk_1s);
+		  clk_250ms							clk2(clk,clk_0);
 		  
 		  
 		  //Collision Detection
-		  
-		  reg [0:299] collisionMatrix = 300'b101111111111111111111000000000001000000111111111111010101101100000100010101001011010101110101010010110101000001000100101101011111111111101011010000010001000010110111110101010100101101000001010001001011010111110101111010110100010001010000101101110111111101011011000100000000010000111111111111111111101;
 		  /*
 			Collision Matrix but Easier to See:
 			20 x 15, multiply by 32 to fill screen
@@ -90,8 +113,8 @@
 			11111111111010101101
 			10000010001010100101
 			10101011101010100101
-			10101000001000100101
-			10101111111111110101
+			10101000001010100101
+			10101111111010110101
 			10100000100010000101
 			10111110101010100101
 			10100000101000100101
@@ -106,18 +129,28 @@
 		  wire enemyCollide;
 		
 		  //Move Player Module
-		  Move_Module m0(e_position, clk_1s, {kup,kdown,kleft,kright}, enemyCollide, newPosition);
+		  Move_Module m0(e_position, e_position2, e_position3, e_position4, e_position5, clk_0, {kup,kdown,kleft,kright}, enemyCollide, newPosition);
+		  
+		  //Enemies
 		  Ranger r0(clk_1s, 3'b001, rangering, e_position);
+		  Ranger r1(clk_1s, 3'b010, rangering, e_position2);
+		  Ranger r2(clk_1s, 3'b011, rangering, e_position3);
+		  Ranger r3(clk_1s, 3'b100, rangering, e_position4);
+		  Ranger r4(clk_1s, 3'b101, rangering, e_position5);
 		  
 		   //Update Player and Enemy Position
 		  always@(posedge clk) begin
 				{a_hpos, a_vpos} <= newPosition;
 				{e_hpos, e_vpos} <= e_position;
+				{e_hpos2, e_vpos2} <= e_position2;
+				{e_hpos3, e_vpos3} <= e_position3;
+				{e_hpos4, e_vpos4} <= e_position4;
+				{e_hpos5, e_vpos5} <= e_position5;
 		  end
 		  
 		  //Display Select
 		  Background Dis(pclk, clk_1s, hcount, vcount, {red,green,blue});
-		  Sprite_Sel SEL0(pclk, {kup,kdown,kleft,kright}, step, hoffset, voffset);
+		  Sprite_Sel SEL0(pclk, {kup, kdown, kleft, kright}, step, hoffset, voffset);
 		  Sprite_Sel SEL1(pclk, rangering, step, e_hoffset, e_voffset);
 		  
 		  //Reset
@@ -190,28 +223,76 @@
 					end
 				end
 				
+				//enemy 2 display
+				else if(display_enemy2) begin
+					if(EnemyData2 == 8'b11111111) begin
+						r <= red;
+						g <= green;
+						b <= blue;
+					end
+					
+					else begin
+						r <= EnemyData2[7:5];
+						g <= EnemyData2[4:2];
+						b <= EnemyData2[1:0];
+					end
+				end
+				
+				//enemy 3 display
+				else if(display_enemy3) begin
+					if(EnemyData3 == 8'b11111111) begin
+						r <= red;
+						g <= green;
+						b <= blue;
+					end
+					
+					else begin
+						r <= EnemyData3[7:5];
+						g <= EnemyData3[4:2];
+						b <= EnemyData3[1:0];
+					end
+				end
+				
+				//enemy 4 display
+				else if(display_enemy4) begin
+					if(EnemyData4 == 8'b11111111) begin
+						r <= red;
+						g <= green;
+						b <= blue;
+					end
+					
+					else begin
+						r <= EnemyData4[7:5];
+						g <= EnemyData4[4:2];
+						b <= EnemyData4[1:0];
+					end
+				end
+				
+				//enemy 5 display
+				else if(display_enemy5) begin
+					if(EnemyData5 == 8'b11111111) begin
+						r <= red;
+						g <= green;
+						b <= blue;
+					end
+					
+					else begin
+						r <= EnemyData5[7:5];
+						g <= EnemyData5[4:2];
+						b <= EnemyData5[1:0];
+					end
+				end
+				
 				else begin
 					r <= red;
 					g <= green;
 					b <= blue;
 				end
+				
 		  end
 		  
 		  //Increase Steps
 		  always@(posedge clk_1s) begin
 				step = step + 1'b1;
 		  end
-		  
-		  //Enemy Module
-//		  always@(posedge clk_1s) begin
-//				ranger_count <= ranger_count + 1'b1 == 60 ? 0 : ranger_count + 1'b1;
-//				case(ranger_count)
-//				0:rangering = 4'b0001;
-//				10:rangering = 4'b0000;
-//				20:rangering = 4'b0010;
-//				30:rangering = 4'b0100;
-//				40:rangering = 4'b0000;
-//				50:rangering = 4'b1000;
-//				endcase
-//		  end
     endmodule    
