@@ -7,9 +7,33 @@ module Ranger(
 	output [19:0] position
     );
 	 
+	 
+//        parameter UP_BOUND = 31;    
+//        parameter DOWN_BOUND = 510;    
+//        parameter LEFT_BOUND = 144;    
+//        parameter RIGHT_BOUND = 783; 
+
 	//Enemy initial positions here
-	reg [9:0] a_hpos = 255;
-   reg [9:0] a_vpos = 240;  
+	//Ranger 1
+	reg [9:0] a_hpos1 = 368;
+   reg [9:0] a_vpos1 = 127; 
+
+	//Ranger 2
+	reg [9:0] a_hpos2 = 656;
+   reg [9:0] a_vpos2 = 127;
+	
+	//Ranger 3
+	reg [9:0] a_hpos3 = 624;
+   reg [9:0] a_vpos3 = 329;
+	
+	//Ranger 4
+	reg [9:0] a_hpos4 = 240;
+   reg [9:0] a_vpos4 = 447;
+	
+	//Ranger 5
+	reg [9:0] a_hpos5 = 368;
+   reg [9:0] a_vpos5 = 240;
+ 
 	
 	assign position = {a_hpos,a_vpos};
 	

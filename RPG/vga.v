@@ -37,7 +37,7 @@
 		  reg [1:0] step = 0;		  
         reg [1:0] count;		  
         
-		  wire clk_1s;
+		  wire clk_1s, clk_0;
 		  
 		  //Sprite Select Wires and Memory Modules
 		  wire display_ash, display_enemy, display_house;
@@ -74,13 +74,12 @@
 		  assign display_enemy = (hcount - e_hpos <= 16 && hcount - e_hpos > 0 && vcount - e_vpos >= 0 && vcount - e_vpos < 16);
 		  assign display_house = 1'b0;	//(hcount - house_hpos <= 64 && hcount - house_hpos > 0 && vcount - house_vpos >= 0 && vcount - house_vpos < 48);
 		      
-		  //1 Second Clock
+		  //Clock Dividers
 		  clk_div_1s 						clk_d(clk, clk_1s);
+		  clk_250ms							clk2(clk,clk_0);
 		  
 		  
 		  //Collision Detection
-		  
-		  reg [0:299] collisionMatrix = 300'b101111111111111111111000000000001000000111111111111010101101100000100010101001011010101110101010010110101000001000100101101011111111111101011010000010001000010110111110101010100101101000001010001001011010111110101111010110100010001010000101101110111111101011011000100000000010000111111111111111111101;
 		  /*
 			Collision Matrix but Easier to See:
 			20 x 15, multiply by 32 to fill screen
@@ -90,8 +89,8 @@
 			11111111111010101101
 			10000010001010100101
 			10101011101010100101
-			10101000001000100101
-			10101111111111110101
+			10101000001010100101
+			10101111111010110101
 			10100000100010000101
 			10111110101010100101
 			10100000101000100101
@@ -106,7 +105,7 @@
 		  wire enemyCollide;
 		
 		  //Move Player Module
-		  Move_Module m0(e_position, clk_1s, {kup,kdown,kleft,kright}, enemyCollide, newPosition);
+		  Move_Module m0(e_position, clk_0, {kup,kdown,kleft,kright}, enemyCollide, newPosition);
 		  Ranger r0(clk_1s, 3'b001, rangering, e_position);
 		  
 		   //Update Player and Enemy Position
@@ -117,7 +116,7 @@
 		  
 		  //Display Select
 		  Background Dis(pclk, clk_1s, hcount, vcount, {red,green,blue});
-		  Sprite_Sel SEL0(pclk, {kup,kdown,kleft,kright}, step, hoffset, voffset);
+		  Sprite_Sel SEL0(pclk, {kup, kdown, kleft, kright}, step, hoffset, voffset);
 		  Sprite_Sel SEL1(pclk, rangering, step, e_hoffset, e_voffset);
 		  
 		  //Reset
