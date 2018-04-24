@@ -34,25 +34,23 @@ module collisionDetection(position, e_position, pblockposx1, pblockposy1, pblock
 	initial begin
 		enemyCollide = 1'b0;
 	end
-	
-	//Current Step
+
 	//up
 	assign pblockposx1 = (position[19:10] - 10'd144)/10'd32;
-	assign pblockposy1 = (position[9:0] - 10'd31 - 5'd1)/10'd32;
+	assign pblockposy1 = (position[9:0] - 10'd31 - 5'd2)/10'd32;
 	
 	//right
-	assign pblockposx2 = (position[19:10] - 10'd144 + 10'd16 + 5'd1)/10'd32;
+	assign pblockposx2 = (position[19:10] - 10'd144 + 10'd16 + 5'd2)/10'd32;
 	assign pblockposy2 = (position[9:0] - 10'd31)/10'd32;
 	
 	//down
 	assign pblockposx3 = (position[19:10] - 10'd144)/10'd32;
-	assign pblockposy3 = (position[9:0] - 10'd31 + 10'd16 + 5'd1)/10'd32;
+	assign pblockposy3 = (position[9:0] - 10'd31 + 10'd16 + 5'd2)/10'd32;
 	
-	
-	//Prediction Step
 	//left
-	assign pblockposx4 = (position[19:10] - 10'd144 - 5'd1)/10'd32;
+	assign pblockposx4 = (position[19:10] - 10'd144 - 5'd2)/10'd32;
 	assign pblockposy4 = (position[9:0] - 10'd31)/10'd32;
+	
 	
 	//Always at position change
 	always @ (position or e_position) begin
