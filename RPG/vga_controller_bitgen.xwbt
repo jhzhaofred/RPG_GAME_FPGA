@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga_controller.ncd
-OUTFILE=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga_controller.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG
-LICENSE=WebPack
-USER_INFO=211078688_0_0_150
