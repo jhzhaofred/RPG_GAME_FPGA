@@ -1,7 +1,24 @@
-  
-`timescale 1ns / 1ps    
-        
- module start_screen(    
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    10:57:04 04/24/2018 
+// Design Name: 
+// Module Name:    battleScreen 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module battleScreen(    
 	  input clk,    
 	  input rst,
 	  input [6:0] switch,
@@ -17,8 +34,8 @@
 	  parameter LEFT_BOUND = 144;    
 	  parameter RIGHT_BOUND = 783;    
 	  
-	  parameter TITLE = "RPG ESCAPE";
-	  reg [79:0] title = TITLE;
+	  parameter TITLE = "BATTLE START";
+	  reg [95:0] title = TITLE;
 	  
 	  reg h_speed, v_speed;    
 	  reg [9:0] up_pos, down_pos, left_pos, right_pos;    
@@ -27,9 +44,11 @@
 	  reg [1:0] count;		  
 	  reg [9:0] hcount, vcount;    
 			
-	  reg [79:0] screen [29:0];
+	  //reg [95:0] screen [29:0];
 	  assign pclk = count[1];    
 	  
+	  
+	  //Display title logic here
 	  wire [0:7] data;
 	  wire [10:0] v_offset, h_offset, char_xoffset,char_yoffset;
 	  assign v_offset = (vcount - 31) % 16;
@@ -38,17 +57,20 @@
 	  assign char_yoffset = (vcount - 31) / 16 - 9;
 	  wire [7:0] char;
 	  assign char = char_yoffset != 0 ?	 8'b0: 
-						 char_xoffset == 9 ? title[7:0] : 
-						 char_xoffset == 8 ? title[15:8] : 
-						 char_xoffset == 7 ? title[23:16] : 
-						 char_xoffset == 6 ? title[31:24] : 
-						 char_xoffset == 5 ? title[39:32] : 
-						 char_xoffset == 4 ? title[47:40] : 
-						 char_xoffset == 3 ? title[55:48] : 
-						 char_xoffset == 2 ? title[63:56] : 
-						 char_xoffset == 1 ? title[71:64] : 
-						 char_xoffset == 0 ? title[79:72] : 8'b0;
+						 char_xoffset == 11 ? title[7:0] : 
+						 char_xoffset == 10 ? title[15:8] : 
+						 char_xoffset == 9 ? title[23:16] : 
+						 char_xoffset == 8 ? title[31:24] : 
+						 char_xoffset == 7 ? title[39:32] : 
+						 char_xoffset == 6 ? title[47:40] : 
+						 char_xoffset == 5 ? title[55:48] : 
+						 char_xoffset == 4 ? title[63:56] : 
+						 char_xoffset == 3 ? title[71:64] : 
+						 char_xoffset == 2 ? title[79:72] : 
+						 char_xoffset == 1 ? title[87:80] : 
+						 char_xoffset == 0 ? title[95:88] : 8'b0;
  	  
+	  //Font ROM Instantiation
 	  font_rom f0(char*16 + v_offset, data);
 	  
 	  always @ (posedge clk)    
@@ -95,7 +117,8 @@
 			end    
 			else begin    
 				 if (vcount>=31 && vcount<=510    
-							&& hcount>=144 && hcount<=783) begin   
+							&& hcount>=144 && hcount<=783) begin
+					  //If we want to display letters
 					  if(data[h_offset]) begin
 						  r <= 3'b000;    
 						  g <= 3'b111;    
@@ -117,3 +140,4 @@
  
 	  
  endmodule    
+

@@ -10,7 +10,8 @@
         output reg [1:0] b,
 		  output [7:0] led,
         output hs,    
-        output vs    
+        output vs,
+		  output enemyCollide
         );    
         
 //        parameter UP_BOUND = 31;    
@@ -27,7 +28,7 @@
 		  wire pclk;
 		  assign pclk = count[1];
 		  wire [8:0] voffset, hoffset, e_voffset, e_hoffset;
-		  reg key_break;
+		  wire key_break;
         
 		  assign vs = (vcount < 2) ? 1'b0 : 1'b1;
 		  
@@ -126,7 +127,7 @@
 		  */
 
 		  wire [19:0] newPosition;
-		  wire enemyCollide;
+		  //wire enemyCollide;
 		
 		  //Move Player Module
 		  Move_Module m0(e_position, e_position2, e_position3, e_position4, e_position5, clk_0, {kup,kdown,kleft,kright}, enemyCollide, newPosition);
