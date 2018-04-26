@@ -1,0 +1,1402 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: vga_controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vga_controller.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vga_controller"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : vga_controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Grass.v" into library work
+Parsing module <Grass>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Grass_synth.v" into library work
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\flower_synth.v" into library work
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\flower.v" into library work
+Parsing module <flower>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\brick_synth.v" into library work
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\brick.v" into library work
+Parsing module <brick>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\collisionDetection.v" into library work
+Parsing module <collisionDetection>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Sprite_Sel.v" into library work
+Parsing module <Sprite_Sel>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" into library work
+Parsing module <Ranger>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" into library work
+Parsing module <Move_Module>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Keyboard_PS2.v" into library work
+Parsing module <Keyboard_PS2>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Enemy_synth.v" into library work
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Enemy.v" into library work
+Parsing module <Enemy>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Ash.v" into library work
+Parsing module <Ash>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Ash_synth.v" into library work
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\clk_div.v" into library work
+Parsing module <clk_div_1s>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\clk_250ms.v" into library work
+Parsing module <clk_250ms>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Background.v" into library work
+Parsing module <Background>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" into library work
+Parsing module <vga_controller>.
+Analyzing Verilog file "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\house_synth.v" into library work
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <vga_controller>.
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 42: Using initial value of rangering since it is never assigned
+
+Elaborating module <Ash>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Ash.v" Line 39: Empty module <Ash> remains a black box.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 46: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 32-bit.
+
+Elaborating module <Enemy>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Enemy.v" Line 39: Empty module <Enemy> remains a black box.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 52: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 58: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 64: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 70: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 76: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 32-bit.
+
+Elaborating module <Keyboard_PS2>.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 81: Size mismatch in connection of port <rst_n_in>. Formal port size is 1-bit while actual signal size is 32-bit.
+
+Elaborating module <clk_div_1s>.
+
+Elaborating module <clk_250ms>.
+
+Elaborating module <Move_Module>.
+
+Elaborating module <collisionDetection>.
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" Line 131: Assignment to enemyCollide ignored, since the identifier is never used
+
+Elaborating module <Ranger>.
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 18: Using initial value of a_hpos1 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 19: Using initial value of a_vpos1 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 22: Using initial value of a_hpos2 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 23: Using initial value of a_vpos2 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 26: Using initial value of a_hpos3 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 27: Using initial value of a_vpos3 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 30: Using initial value of a_hpos4 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 31: Using initial value of a_vpos4 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 34: Using initial value of a_hpos5 since it is never assigned
+WARNING:HDLCompiler:872 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v" Line 35: Using initial value of a_vpos5 since it is never assigned
+
+Elaborating module <Background>.
+
+Elaborating module <Grass>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\Grass.v" Line 39: Empty module <Grass> remains a black box.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Background.v" Line 14: Size mismatch in connection of port <addra>. Formal port size is 6-bit while actual signal size is 32-bit.
+
+Elaborating module <flower>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\flower.v" Line 39: Empty module <flower> remains a black box.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Background.v" Line 22: Size mismatch in connection of port <addra>. Formal port size is 6-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Background.v" Line 28: Size mismatch in connection of port <addra>. Formal port size is 6-bit while actual signal size is 32-bit.
+
+Elaborating module <brick>.
+WARNING:HDLCompiler:1499 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\ipcore_dir\brick.v" Line 39: Empty module <brick> remains a black box.
+WARNING:HDLCompiler:189 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Background.v" Line 34: Size mismatch in connection of port <addra>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Background.v" Line 53: Result of 27-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Background.v" Line 54: Result of 27-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <Sprite_Sel>.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Sprite_Sel.v" Line 28: Signal <have_inputs> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Sprite_Sel.v" Line 28: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Sprite_Sel.v" Line 29: Signal <walk> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <vga_controller>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v".
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\vga.v" line 131: Output port <enemyCollide> of the instance <m0> is unconnected or connected to loadless signal.
+    Found 10-bit register for signal <hcount>.
+    Found 10-bit register for signal <vcount>.
+    Found 10-bit register for signal <a_hpos>.
+    Found 10-bit register for signal <e_vpos>.
+    Found 10-bit register for signal <e_hpos>.
+    Found 10-bit register for signal <e_vpos2>.
+    Found 10-bit register for signal <e_hpos2>.
+    Found 10-bit register for signal <e_vpos3>.
+    Found 10-bit register for signal <e_hpos3>.
+    Found 10-bit register for signal <e_vpos4>.
+    Found 10-bit register for signal <e_hpos4>.
+    Found 10-bit register for signal <e_vpos5>.
+    Found 10-bit register for signal <e_hpos5>.
+    Found 2-bit register for signal <count>.
+    Found 3-bit register for signal <r>.
+    Found 3-bit register for signal <g>.
+    Found 2-bit register for signal <b>.
+    Found 2-bit register for signal <step>.
+    Found 10-bit register for signal <a_vpos>.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_42_OUT> created at line 93.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_47_OUT> created at line 93.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_49_OUT> created at line 94.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_54_OUT> created at line 94.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_56_OUT> created at line 95.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_61_OUT> created at line 95.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_63_OUT> created at line 96.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_68_OUT> created at line 96.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_70_OUT> created at line 97.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_75_OUT> created at line 97.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_77_OUT> created at line 98.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_82_OUT> created at line 98.
+    Found 10-bit adder for signal <n0270> created at line 46.
+    Found 32-bit adder for signal <n0354> created at line 46.
+    Found 32-bit adder for signal <n0192> created at line 46.
+    Found 10-bit adder for signal <n0275> created at line 52.
+    Found 32-bit adder for signal <n0363> created at line 52.
+    Found 32-bit adder for signal <n0196> created at line 52.
+    Found 10-bit adder for signal <n0280> created at line 58.
+    Found 32-bit adder for signal <n0372> created at line 58.
+    Found 32-bit adder for signal <n0200> created at line 58.
+    Found 10-bit adder for signal <n0285> created at line 64.
+    Found 32-bit adder for signal <n0381> created at line 64.
+    Found 32-bit adder for signal <n0204> created at line 64.
+    Found 10-bit adder for signal <n0290> created at line 70.
+    Found 32-bit adder for signal <n0390> created at line 70.
+    Found 32-bit adder for signal <n0208> created at line 70.
+    Found 10-bit adder for signal <n0295> created at line 76.
+    Found 32-bit adder for signal <n0399> created at line 76.
+    Found 32-bit adder for signal <n0212> created at line 76.
+    Found 2-bit adder for signal <count[1]_GND_1_o_add_97_OUT> created at line 161.
+    Found 10-bit adder for signal <hcount[9]_GND_1_o_add_102_OUT> created at line 173.
+    Found 10-bit adder for signal <vcount[9]_GND_1_o_add_107_OUT> created at line 185.
+    Found 2-bit adder for signal <step[1]_GND_1_o_add_158_OUT> created at line 295.
+    Found 10x6-bit multiplier for signal <BUS_0001_PWR_1_o_MuLt_3_OUT> created at line 46.
+    Found 10x6-bit multiplier for signal <BUS_0004_PWR_1_o_MuLt_9_OUT> created at line 52.
+    Found 10x6-bit multiplier for signal <BUS_0007_PWR_1_o_MuLt_15_OUT> created at line 58.
+    Found 10x6-bit multiplier for signal <BUS_0010_PWR_1_o_MuLt_21_OUT> created at line 64.
+    Found 10x6-bit multiplier for signal <BUS_0013_PWR_1_o_MuLt_27_OUT> created at line 70.
+    Found 10x6-bit multiplier for signal <BUS_0016_PWR_1_o_MuLt_33_OUT> created at line 76.
+    Found 10-bit comparator lessequal for signal <vcount[9]_GND_1_o_LessThan_1_o> created at line 31
+    Found 32-bit comparator lessequal for signal <n0032> created at line 93
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_45_o> created at line 93
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_48_o> created at line 93
+    Found 32-bit comparator lessequal for signal <n0040> created at line 94
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_52_o> created at line 94
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_55_o> created at line 94
+    Found 32-bit comparator lessequal for signal <n0048> created at line 95
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_59_o> created at line 95
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_62_o> created at line 95
+    Found 32-bit comparator lessequal for signal <n0056> created at line 96
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_66_o> created at line 96
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_69_o> created at line 96
+    Found 32-bit comparator lessequal for signal <n0064> created at line 97
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_73_o> created at line 97
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_76_o> created at line 97
+    Found 32-bit comparator lessequal for signal <n0072> created at line 98
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_80_o> created at line 98
+    Found 32-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_83_o> created at line 98
+    Found 10-bit comparator lessequal for signal <hcount[9]_GND_1_o_LessThan_101_o> created at line 165
+    Summary:
+	inferred   6 Multiplier(s).
+	inferred  34 Adder/Subtractor(s).
+	inferred 152 D-type flip-flop(s).
+	inferred  20 Comparator(s).
+	inferred  38 Multiplexer(s).
+Unit <vga_controller> synthesized.
+
+Synthesizing Unit <Keyboard_PS2>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Keyboard_PS2.v".
+    Found 1-bit register for signal <key_clk_r1>.
+    Found 1-bit register for signal <key_data_r0>.
+    Found 1-bit register for signal <key_data_r1>.
+    Found 4-bit register for signal <cnt>.
+    Found 8-bit register for signal <temp_data>.
+    Found 1-bit register for signal <key_break>.
+    Found 1-bit register for signal <key_state>.
+    Found 8-bit register for signal <key_byte>.
+    Found 1-bit register for signal <key_clk_r0>.
+    Found 4-bit adder for signal <cnt[3]_GND_5_o_add_3_OUT> created at line 42.
+    Found 4-bit comparator lessequal for signal <n0009> created at line 41
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <Keyboard_PS2> synthesized.
+
+Synthesizing Unit <clk_div_1s>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\clk_div.v".
+    Found 1-bit register for signal <clk_0>.
+    Found 33-bit register for signal <k>.
+    Found 33-bit adder for signal <k[32]_GND_7_o_add_2_OUT> created at line 13.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <clk_div_1s> synthesized.
+
+Synthesizing Unit <clk_250ms>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\clk_250ms.v".
+    Found 1-bit register for signal <clk_0>.
+    Found 33-bit register for signal <k>.
+    Found 33-bit adder for signal <k[32]_GND_8_o_add_2_OUT> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <clk_250ms> synthesized.
+
+Synthesizing Unit <Move_Module>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v".
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 38: Output port <pblockposx1> of the instance <cd3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 38: Output port <pblockposy1> of the instance <cd3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 38: Output port <pblockposx2> of the instance <cd3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 38: Output port <pblockposy2> of the instance <cd3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 38: Output port <pblockposx3> of the instance <cd3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 38: Output port <pblockposy3> of the instance <cd3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 38: Output port <pblockposx4> of the instance <cd3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 38: Output port <pblockposy4> of the instance <cd3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 39: Output port <pblockposx1> of the instance <cd4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 39: Output port <pblockposy1> of the instance <cd4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 39: Output port <pblockposx2> of the instance <cd4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 39: Output port <pblockposy2> of the instance <cd4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 39: Output port <pblockposx3> of the instance <cd4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 39: Output port <pblockposy3> of the instance <cd4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 39: Output port <pblockposx4> of the instance <cd4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 39: Output port <pblockposy4> of the instance <cd4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 40: Output port <pblockposx1> of the instance <cd5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 40: Output port <pblockposy1> of the instance <cd5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 40: Output port <pblockposx2> of the instance <cd5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 40: Output port <pblockposy2> of the instance <cd5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 40: Output port <pblockposx3> of the instance <cd5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 40: Output port <pblockposy3> of the instance <cd5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 40: Output port <pblockposx4> of the instance <cd5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 40: Output port <pblockposy4> of the instance <cd5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 41: Output port <pblockposx1> of the instance <cd6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 41: Output port <pblockposy1> of the instance <cd6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 41: Output port <pblockposx2> of the instance <cd6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 41: Output port <pblockposy2> of the instance <cd6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 41: Output port <pblockposx3> of the instance <cd6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 41: Output port <pblockposy3> of the instance <cd6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 41: Output port <pblockposx4> of the instance <cd6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Move_Module.v" line 41: Output port <pblockposy4> of the instance <cd6> is unconnected or connected to loadless signal.
+WARNING:Xst:2999 - Signal 'collisionMatrix', unconnected in block 'Move_Module', is tied to its initial value.
+    Found 10-bit register for signal <a_vpos>.
+    Found 10-bit register for signal <a_hpos>.
+    Found 1-bit register for signal <enemyCollide>.
+    Found 10-bit subtractor for signal <a_vpos[9]_GND_9_o_sub_16_OUT> created at line 49.
+    Found 10-bit subtractor for signal <a_hpos[9]_GND_9_o_sub_18_OUT> created at line 51.
+    Found 10-bit subtractor for signal <a_vpos[9]_GND_9_o_sub_26_OUT> created at line 59.
+    Found 10-bit subtractor for signal <a_hpos[9]_GND_9_o_sub_30_OUT> created at line 61.
+    Found 11-bit adder for signal <n0062> created at line 32.
+    Found 11-bit adder for signal <n0064> created at line 33.
+    Found 11-bit adder for signal <n0066> created at line 34.
+    Found 11-bit adder for signal <n0068> created at line 35.
+    Found 10-bit adder for signal <a_vpos[9]_GND_9_o_add_14_OUT> created at line 48.
+    Found 10-bit adder for signal <a_hpos[9]_GND_9_o_add_16_OUT> created at line 50.
+    Found 10-bit adder for signal <a_vpos[9]_GND_9_o_add_27_OUT> created at line 60.
+    Found 10-bit adder for signal <a_hpos[9]_GND_9_o_add_31_OUT> created at line 62.
+    Found 6x5-bit multiplier for signal <n0102> created at line 32.
+    Found 6x5-bit multiplier for signal <n0105> created at line 33.
+    Found 6x5-bit multiplier for signal <n0108> created at line 34.
+    Found 6x5-bit multiplier for signal <n0111> created at line 35.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <collisionMatrix>, simulation mismatch.
+    Found 300x1-bit dual-port Read Only RAM <Mram_collisionMatrix> for signal <collisionMatrix>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 Multiplier(s).
+	inferred  12 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <Move_Module> synthesized.
+
+Synthesizing Unit <collisionDetection>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\collisionDetection.v".
+    Found 10-bit subtractor for signal <n0042[9:0]> created at line 39.
+    Found 10-bit subtractor for signal <n0045[9:0]> created at line 40.
+    Found 10-bit subtractor for signal <n0043> created at line 40.
+    Found 10-bit subtractor for signal <n0047> created at line 51.
+    Found 10-bit adder for signal <position[19]_GND_11_o_add_15_OUT> created at line 60.
+    Found 10-bit adder for signal <e_position[19]_GND_11_o_add_27_OUT> created at line 84.
+    Found 10-bit adder for signal <position[9]_GND_11_o_add_30_OUT> created at line 87.
+    Found 10-bit adder for signal <e_position[9]_GND_11_o_add_36_OUT> created at line 97.
+    Found 10-bit adder for signal <n0044> created at line 43.
+    Found 10-bit adder for signal <n0046> created at line 48.
+    Found 10-bit comparator lessequal for signal <n0009> created at line 60
+    Found 10-bit comparator lessequal for signal <n0012> created at line 60
+    Found 10-bit comparator lessequal for signal <n0015> created at line 84
+    Found 10-bit comparator lessequal for signal <n0018> created at line 84
+    Found 10-bit comparator lessequal for signal <n0021> created at line 87
+    Found 10-bit comparator lessequal for signal <n0024> created at line 87
+    Found 10-bit comparator lessequal for signal <n0027> created at line 92
+    Found 10-bit comparator lessequal for signal <n0029> created at line 92
+    Found 10-bit comparator equal for signal <e_position[9]_position[9]_equal_36_o> created at line 97
+    Found 10-bit comparator equal for signal <e_position[9]_position[9]_equal_38_o> created at line 97
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <collisionDetection> synthesized.
+
+Synthesizing Unit <Ranger>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Ranger.v".
+WARNING:Xst:647 - Input <inputs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 20-bit register for signal <position>.
+    Found 8x20-bit Read Only RAM for signal <rangerNum[2]_GND_12_o_wide_mux_1_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  20 D-type flip-flop(s).
+Unit <Ranger> synthesized.
+
+Synthesizing Unit <Background>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Background.v".
+WARNING:Xst:2999 - Signal 'collisionMatrix', unconnected in block 'Background', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <collisionMatrix>, simulation mismatch.
+    Found 300x1-bit single-port Read Only RAM <Mram_collisionMatrix> for signal <collisionMatrix>.
+    Found 4-bit register for signal <matrixYLoc>.
+    Found 8-bit register for signal <color>.
+    Found 4-bit register for signal <count>.
+    Found 5-bit register for signal <matrixXLoc>.
+    Found 4-bit subtractor for signal <GND_13_o_GND_13_o_sub_9_OUT> created at line 28.
+    Found 11-bit subtractor for signal <n0063> created at line 66.
+    Found 11-bit subtractor for signal <n0064> created at line 66.
+    Found 6-bit adder for signal <v_count[2]_GND_13_o_add_0_OUT> created at line 14.
+    Found 6-bit adder for signal <GND_13_o_GND_13_o_add_5_OUT> created at line 22.
+    Found 32-bit adder for signal <n0067> created at line 28.
+    Found 8-bit adder for signal <v_count[3]_GND_13_o_add_10_OUT> created at line 34.
+    Found 9-bit adder for signal <matrixYLoc[3]_GND_13_o_add_19_OUT> created at line 60.
+    Found 4-bit adder for signal <count[3]_GND_13_o_add_41_OUT> created at line 71.
+    Found 4x5-bit multiplier for signal <n0106> created at line 60.
+    Found 10-bit comparator lessequal for signal <n0007> created at line 56
+    Found 10-bit comparator lessequal for signal <n0009> created at line 56
+    Found 10-bit comparator lessequal for signal <n0012> created at line 56
+    Found 10-bit comparator lessequal for signal <n0015> created at line 56
+    Found 4-bit comparator lessequal for signal <n0022> created at line 65
+    Found 4-bit comparator lessequal for signal <n0024> created at line 65
+    Found 5-bit comparator lessequal for signal <n0027> created at line 65
+    Found 5-bit comparator lessequal for signal <n0030> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <Background> synthesized.
+
+Synthesizing Unit <Sprite_Sel>.
+    Related source file is "\\ad\eng\users\k\l\klwalsh\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\Sprite_Sel.v".
+    Found 9-bit register for signal <voffset>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <Sprite_Sel> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 300x1-bit dual-port Read Only RAM                     : 2
+ 300x1-bit single-port Read Only RAM                   : 1
+ 8x20-bit single-port Read Only RAM                    : 5
+# Multipliers                                          : 11
+ 10x6-bit multiplier                                   : 6
+ 5x4-bit multiplier                                    : 1
+ 6x5-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 108
+ 10-bit adder                                          : 42
+ 10-bit subtractor                                     : 24
+ 11-bit adder                                          : 4
+ 11-bit subtractor                                     : 14
+ 2-bit adder                                           : 2
+ 32-bit adder                                          : 13
+ 33-bit adder                                          : 2
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 1
+ 6-bit adder                                           : 2
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 45
+ 1-bit register                                        : 9
+ 10-bit register                                       : 14
+ 2-bit register                                        : 3
+ 20-bit register                                       : 6
+ 3-bit register                                        : 2
+ 33-bit register                                       : 2
+ 4-bit register                                        : 3
+ 5-bit register                                        : 1
+ 8-bit register                                        : 3
+ 9-bit register                                        : 2
+# Comparators                                          : 79
+ 10-bit comparator equal                               : 10
+ 10-bit comparator lessequal                           : 46
+ 32-bit comparator greater                             : 12
+ 32-bit comparator lessequal                           : 6
+ 4-bit comparator lessequal                            : 3
+ 5-bit comparator lessequal                            : 2
+# Multiplexers                                         : 82
+ 1-bit 2-to-1 multiplexer                              : 20
+ 10-bit 2-to-1 multiplexer                             : 8
+ 2-bit 2-to-1 multiplexer                              : 12
+ 3-bit 2-to-1 multiplexer                              : 24
+ 32-bit 2-to-1 multiplexer                             : 6
+ 8-bit 2-to-1 multiplexer                              : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/Ash.ngc>.
+Reading core <ipcore_dir/Enemy.ngc>.
+Reading core <ipcore_dir/Grass.ngc>.
+Reading core <ipcore_dir/flower.ngc>.
+Reading core <ipcore_dir/brick.ngc>.
+Loading core <Ash> for timing and area information for instance <ash>.
+Loading core <Enemy> for timing and area information for instance <rocket>.
+Loading core <Enemy> for timing and area information for instance <rocket2>.
+Loading core <Enemy> for timing and area information for instance <rocket3>.
+Loading core <Enemy> for timing and area information for instance <rocket4>.
+Loading core <Enemy> for timing and area information for instance <rocket5>.
+Loading core <Grass> for timing and area information for instance <GrassBackground>.
+Loading core <flower> for timing and area information for instance <f0>.
+Loading core <flower> for timing and area information for instance <f1>.
+Loading core <brick> for timing and area information for instance <b1>.
+WARNING:Xst:1293 - FF/Latch <voffset_0> has a constant value of 0 in block <SEL0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_1> has a constant value of 0 in block <SEL0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_2> has a constant value of 0 in block <SEL0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_3> has a constant value of 0 in block <SEL0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_6> has a constant value of 0 in block <SEL0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_7> has a constant value of 0 in block <SEL0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_8> has a constant value of 0 in block <SEL0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_0> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_1> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_2> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_3> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_4> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_5> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_6> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_7> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <voffset_8> has a constant value of 0 in block <SEL1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Background>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+	Multiplier <Mmult_n0106> in block <Background> and adder/subtractor <Madd_matrixYLoc[3]_GND_13_o_add_19_OUT> in block <Background> are combined into a MAC<Maddsub_n0106>.
+	The following registers are also absorbed by the MAC: <matrixXLoc> in block <Background>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_collisionMatrix> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 300-word x 1-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <matrixYLoc[3]_GND_13_o_add_19_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Background> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Keyboard_PS2>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <Keyboard_PS2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Move_Module>.
+	Multiplier <Mmult_n0102> in block <Move_Module> and adder/subtractor <Madd_n0062_Madd> in block <Move_Module> are combined into a MAC<Maddsub_n0102>.
+	Multiplier <Mmult_n0108> in block <Move_Module> and adder/subtractor <Madd_n0066_Madd> in block <Move_Module> are combined into a MAC<Maddsub_n0108>.
+	Multiplier <Mmult_n0105> in block <Move_Module> and adder/subtractor <Madd_n0064_Madd> in block <Move_Module> are combined into a MAC<Maddsub_n0105>.
+	Multiplier <Mmult_n0111> in block <Move_Module> and adder/subtractor <Madd_n0068_Madd> in block <Move_Module> are combined into a MAC<Maddsub_n0111>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_collisionMatrix> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 300-word x 1-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0062>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <wallCollide1>  |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 300-word x 1-bit                    |          |
+    |     addrB          | connected to signal <n0064>         |          |
+    |     doB            | connected to signal <wallCollide2>  |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_collisionMatrix1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 300-word x 1-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0066>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <wallCollide3>  |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 300-word x 1-bit                    |          |
+    |     addrB          | connected to signal <n0068>         |          |
+    |     doB            | connected to signal <wallCollide4>  |          |
+    -----------------------------------------------------------------------
+Unit <Move_Module> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Ranger>.
+INFO:Xst:3231 - The small RAM <Mram_rangerNum[2]_GND_12_o_wide_mux_1_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 20-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <rangerNum>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Ranger> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_250ms>.
+The following registers are absorbed into counter <k>: 1 register on signal <k>.
+Unit <clk_250ms> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk_div_1s>.
+The following registers are absorbed into counter <k>: 1 register on signal <k>.
+Unit <clk_div_1s> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_controller>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <hcount>: 1 register on signal <hcount>.
+The following registers are absorbed into counter <vcount>: 1 register on signal <vcount>.
+The following registers are absorbed into counter <step>: 1 register on signal <step>.
+	Multiplier <Mmult_BUS_0001_PWR_1_o_MuLt_3_OUT> in block <vga_controller> and adder/subtractor <Madd_n0192_Madd> in block <vga_controller> are combined into a MAC<Maddsub_BUS_0001_PWR_1_o_MuLt_3_OUT>.
+	Multiplier <Mmult_BUS_0004_PWR_1_o_MuLt_9_OUT> in block <vga_controller> and adder/subtractor <Madd_n0196_Madd> in block <vga_controller> are combined into a MAC<Maddsub_BUS_0004_PWR_1_o_MuLt_9_OUT>.
+	Multiplier <Mmult_BUS_0007_PWR_1_o_MuLt_15_OUT> in block <vga_controller> and adder/subtractor <Madd_n0200_Madd> in block <vga_controller> are combined into a MAC<Maddsub_BUS_0007_PWR_1_o_MuLt_15_OUT>.
+	Multiplier <Mmult_BUS_0010_PWR_1_o_MuLt_21_OUT> in block <vga_controller> and adder/subtractor <Madd_n0204_Madd> in block <vga_controller> are combined into a MAC<Maddsub_BUS_0010_PWR_1_o_MuLt_21_OUT>.
+	Multiplier <Mmult_BUS_0013_PWR_1_o_MuLt_27_OUT> in block <vga_controller> and adder/subtractor <Madd_n0208_Madd> in block <vga_controller> are combined into a MAC<Maddsub_BUS_0013_PWR_1_o_MuLt_27_OUT>.
+	Multiplier <Mmult_BUS_0016_PWR_1_o_MuLt_33_OUT> in block <vga_controller> and adder/subtractor <Madd_n0212_Madd> in block <vga_controller> are combined into a MAC<Maddsub_BUS_0016_PWR_1_o_MuLt_33_OUT>.
+	Adder/Subtractor <Madd_n0270> in block <vga_controller> and  <Maddsub_BUS_0001_PWR_1_o_MuLt_3_OUT> in block <vga_controller> are combined into a MAC with pre-adder <Maddsub_BUS_0001_PWR_1_o_MuLt_3_OUT1>.
+	Adder/Subtractor <Madd_n0275> in block <vga_controller> and  <Maddsub_BUS_0004_PWR_1_o_MuLt_9_OUT> in block <vga_controller> are combined into a MAC with pre-adder <Maddsub_BUS_0004_PWR_1_o_MuLt_9_OUT1>.
+	Adder/Subtractor <Madd_n0280> in block <vga_controller> and  <Maddsub_BUS_0007_PWR_1_o_MuLt_15_OUT> in block <vga_controller> are combined into a MAC with pre-adder <Maddsub_BUS_0007_PWR_1_o_MuLt_15_OUT1>.
+	Adder/Subtractor <Madd_n0290> in block <vga_controller> and  <Maddsub_BUS_0013_PWR_1_o_MuLt_27_OUT> in block <vga_controller> are combined into a MAC with pre-adder <Maddsub_BUS_0013_PWR_1_o_MuLt_27_OUT1>.
+	Adder/Subtractor <Madd_n0285> in block <vga_controller> and  <Maddsub_BUS_0010_PWR_1_o_MuLt_21_OUT> in block <vga_controller> are combined into a MAC with pre-adder <Maddsub_BUS_0010_PWR_1_o_MuLt_21_OUT1>.
+	Adder/Subtractor <Madd_n0295> in block <vga_controller> and  <Maddsub_BUS_0016_PWR_1_o_MuLt_33_OUT> in block <vga_controller> are combined into a MAC with pre-adder <Maddsub_BUS_0016_PWR_1_o_MuLt_33_OUT1>.
+Unit <vga_controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 300x1-bit dual-port distributed Read Only RAM         : 2
+ 300x1-bit single-port distributed Read Only RAM       : 1
+ 8x20-bit single-port distributed Read Only RAM        : 5
+# MACs                                                 : 11
+ 5x4-to-9-bit MAC                                      : 1
+ 6x10-to-12-bit MAC with pre-adder                     : 6
+ 6x5-to-9-bit MAC                                      : 4
+# Adders/Subtractors                                   : 83
+ 10-bit adder                                          : 34
+ 10-bit subtractor                                     : 25
+ 11-bit subtractor                                     : 12
+ 12-bit adder                                          : 6
+ 4-bit subtractor                                      : 1
+ 6-bit adder                                           : 3
+ 8-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 8
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 2
+ 33-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 308
+ Flip-Flops                                            : 308
+# Comparators                                          : 79
+ 10-bit comparator equal                               : 10
+ 10-bit comparator lessequal                           : 46
+ 32-bit comparator greater                             : 12
+ 32-bit comparator lessequal                           : 6
+ 4-bit comparator lessequal                            : 3
+ 5-bit comparator lessequal                            : 2
+# Multiplexers                                         : 80
+ 1-bit 2-to-1 multiplexer                              : 20
+ 10-bit 2-to-1 multiplexer                             : 6
+ 2-bit 2-to-1 multiplexer                              : 12
+ 3-bit 2-to-1 multiplexer                              : 24
+ 32-bit 2-to-1 multiplexer                             : 6
+ 8-bit 2-to-1 multiplexer                              : 12
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <voffset_0> has a constant value of 0 in block <Sprite_Sel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <voffset_1> has a constant value of 0 in block <Sprite_Sel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <voffset_2> has a constant value of 0 in block <Sprite_Sel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <voffset_3> has a constant value of 0 in block <Sprite_Sel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <voffset_6> has a constant value of 0 in block <Sprite_Sel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <voffset_7> has a constant value of 0 in block <Sprite_Sel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <voffset_8> has a constant value of 0 in block <Sprite_Sel>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_14> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_13> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_12> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_11> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_10> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_7> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_6> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_2> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_1> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_19> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_18> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_17> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_16> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_15> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_14> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_13> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_12> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_11> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_10> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_19> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_18> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_17> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_16> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_15> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_14> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_13> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_12> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_11> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_10> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_2> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_1> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r4/position_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_19> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_18> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_17> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_16> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r3/position_15> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_2> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_1> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_19> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_18> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_17> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_16> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_15> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_14> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_13> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_12> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_11> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_10> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_8> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_2> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_1> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r0/position_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_5> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_4> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_2> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_1> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r2/position_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_19> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_18> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_17> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_16> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_15> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_14> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_13> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_12> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_11> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_10> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_8> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <r1/position_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_8> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_0> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_1> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_2> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_3> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_4> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_6> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_7> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_8> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos2_9> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_1> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_2> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_4> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_5> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos3_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_1> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_2> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_8> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_0> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_1> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_2> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_3> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_1> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_2> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos2_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_5> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_6> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_1> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_2> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos5_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_0> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_1> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_2> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_3> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos5_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_0> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_1> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_2> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_3> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_6> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_7> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_8> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos3_9> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_0> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_1> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_2> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_3> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_4> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_5> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_6> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_7> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_8> (without init value) has a constant value of 1 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_vpos4_9> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_0> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_1> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_2> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_3> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <e_hpos4_4> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Maddsub_n01061_0> (without init value) has a constant value of 0 in block <Background>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <matrixXLoc_0> in Unit <Background> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01061_5> 
+INFO:Xst:2261 - The FF/Latch <matrixXLoc_1> in Unit <Background> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01061_4> 
+INFO:Xst:2261 - The FF/Latch <matrixXLoc_2> in Unit <Background> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01061_3> 
+INFO:Xst:2261 - The FF/Latch <matrixXLoc_3> in Unit <Background> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01061_2> 
+INFO:Xst:2261 - The FF/Latch <matrixXLoc_4> in Unit <Background> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n01061_1> 
+
+Optimizing unit <vga_controller> ...
+
+Optimizing unit <Keyboard_PS2> ...
+
+Optimizing unit <Background> ...
+
+Optimizing unit <Move_Module> ...
+WARNING:Xst:1293 - FF/Latch <a_vpos_0> has a constant value of 0 in block <Move_Module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <a_hpos_0> has a constant value of 0 in block <Move_Module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <collisionDetection> ...
+
+Optimizing unit <Sprite_Sel> ...
+WARNING:Xst:1293 - FF/Latch <SEL1/voffset_5> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <SEL1/voffset_4> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a_hpos_0> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <a_vpos_0> (without init value) has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <m0/enemyCollide> of sequential type is unconnected in block <vga_controller>.
+WARNING:Xst:1293 - FF/Latch <clk_d/k_32> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_31> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_30> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_29> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_28> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_27> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_26> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_25> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_24> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_d/k_23> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_32> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_31> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_30> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_29> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_28> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_27> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_26> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_25> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_24> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_23> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_22> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk2/k_21> has a constant value of 0 in block <vga_controller>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vga_controller, actual ratio is 11.
+FlipFlop m0/a_hpos_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <vga_controller> :
+	Found 2-bit shift register for signal <keyboard/key_data_r1>.
+Unit <vga_controller> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 162
+ Flip-Flops                                            : 162
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : vga_controller.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1206
+#      GND                         : 11
+#      INV                         : 60
+#      LUT1                        : 50
+#      LUT2                        : 153
+#      LUT3                        : 63
+#      LUT4                        : 181
+#      LUT5                        : 104
+#      LUT6                        : 200
+#      MUXCY                       : 250
+#      MUXF7                       : 6
+#      VCC                         : 11
+#      XORCY                       : 117
+# FlipFlops/Latches                : 175
+#      FD                          : 64
+#      FDC                         : 10
+#      FDCE                        : 10
+#      FDE                         : 32
+#      FDR                         : 55
+#      FDRE                        : 4
+# RAMS                             : 28
+#      RAM128X1D                   : 4
+#      RAM64X1D                    : 2
+#      RAMB8BWER                   : 22
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 3
+#      OBUF                        : 18
+# DSPs                             : 12
+#      DSP48A1                     : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             175  out of  18224     0%  
+ Number of Slice LUTs:                  832  out of   9112     9%  
+    Number used as Logic:               811  out of   9112     8%  
+    Number used as Memory:               21  out of   2176     0%  
+       Number used as RAM:               20
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    882
+   Number with an unused Flip Flop:     707  out of    882    80%  
+   Number with an unused LUT:            50  out of    882     5%  
+   Number of fully used LUT-FF pairs:   125  out of    882    14%  
+   Number of unique control sets:        24
+
+IO Utilization: 
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               11  out of     32    34%  
+    Number using Block RAM only:         11
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                     12  out of     32    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                           | Load  |
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                           | 92    |
+count_1                            | BUFG                                                                                                                            | 82    |
+clk_d/clk_0                        | NONE(step_0)                                                                                                                    | 6     |
+a_hpos<0>                          | NONE(Madd_n0363_Madd1)                                                                                                          | 6     |
+clk2/clk_0                         | NONE(m0/a_hpos_9)                                                                                                               | 19    |
+ash/N1                             | NONE(ash/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)    | 3     |
+rocket5/N1                         | NONE(rocket5/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)| 3     |
+rocket4/N1                         | NONE(rocket4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)| 3     |
+rocket3/N1                         | NONE(rocket3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)| 3     |
+rocket2/N1                         | NONE(rocket2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)| 3     |
+rocket/N1                          | NONE(rocket/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram) | 3     |
+e_hpos2<5>                         | NONE(m0_Mram_collisionMatrix13)                                                                                                 | 6     |
+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 12.896ns (Maximum Frequency: 77.545MHz)
+   Minimum input arrival time before clock: 2.785ns
+   Maximum output required time after clock: 7.132ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'count_1'
+  Clock period: 12.896ns (frequency: 77.545MHz)
+  Total number of paths / destination ports: 3519078 / 341
+-------------------------------------------------------------------------
+Delay:               12.896ns (Levels of Logic = 5)
+  Source:            hcount_7 (FF)
+  Destination:       rocket5/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram (RAM)
+  Source Clock:      count_1 rising
+  Destination Clock: count_1 rising
+
+  Data Path: hcount_7 to rocket5/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             24   0.447   1.517  hcount_7 (hcount_7)
+     LUT6:I1->O           76   0.203   1.718  GND_1_o_GND_1_o_sub_49_OUT<10>11 (GND_1_o_GND_1_o_sub_49_OUT<10>)
+     DSP48A1:C10->PCOUT47    1   2.689   0.000  Madd_n0363_Madd1 (Madd_n0363_Madd1_PCOUT_to_Maddsub_BUS_0004_PWR_1_o_MuLt_9_OUT1_PCIN_47)
+     DSP48A1:PCIN47->P11    3   2.264   0.755  Maddsub_BUS_0004_PWR_1_o_MuLt_9_OUT1 (n0196<11>)
+     begin scope: 'rocket:addra<11>'
+     LUT2:I0->O            1   0.203   0.579  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_PWR_16_o_equal_3_o<1>1 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<2>)
+     RAMB8BWER:ENAWREN         0.220          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram
+    ----------------------------------------
+    Total                     12.896ns (8.326ns logic, 4.570ns route)
+                                       (64.6% logic, 35.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.898ns (frequency: 204.157MHz)
+  Total number of paths / destination ports: 1831 / 144
+-------------------------------------------------------------------------
+Delay:               4.898ns (Levels of Logic = 3)
+  Source:            keyboard/temp_data_3 (FF)
+  Destination:       keyboard/key_byte_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: keyboard/temp_data_3 to keyboard/key_byte_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   0.879  keyboard/temp_data_3 (keyboard/temp_data_3)
+     LUT3:I0->O            1   0.205   0.924  keyboard/temp_data[7]_PWR_5_o_equal_12_o<7>_SW0 (N26)
+     LUT6:I1->O            4   0.203   0.912  keyboard/temp_data[7]_PWR_5_o_equal_12_o<7> (keyboard/temp_data[7]_PWR_5_o_equal_12_o)
+     LUT3:I0->O            8   0.205   0.802  keyboard/_n0141_inv1 (keyboard/_n0141_inv)
+     FDE:CE                    0.322          keyboard/key_byte_0
+    ----------------------------------------
+    Total                      4.898ns (1.382ns logic, 3.516ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_d/clk_0'
+  Clock period: 2.016ns (frequency: 495.933MHz)
+  Total number of paths / destination ports: 13 / 6
+-------------------------------------------------------------------------
+Delay:               2.016ns (Levels of Logic = 1)
+  Source:            step_0 (FF)
+  Destination:       step_0 (FF)
+  Source Clock:      clk_d/clk_0 rising
+  Destination Clock: clk_d/clk_0 rising
+
+  Data Path: step_0 to step_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.447   0.683  step_0 (step_0)
+     INV:I->O              1   0.206   0.579  Mcount_step_xor<0>11_INV_0 (Result<0>1)
+     FD:D                      0.102          step_0
+    ----------------------------------------
+    Total                      2.016ns (0.755ns logic, 1.261ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk2/clk_0'
+  Clock period: 11.090ns (frequency: 90.169MHz)
+  Total number of paths / destination ports: 57622 / 19
+-------------------------------------------------------------------------
+Delay:               11.090ns (Levels of Logic = 11)
+  Source:            m0/a_hpos_6 (FF)
+  Destination:       m0/a_vpos_7 (FF)
+  Source Clock:      clk2/clk_0 rising
+  Destination Clock: clk2/clk_0 rising
+
+  Data Path: m0/a_hpos_6 to m0/a_vpos_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              52   0.447   1.808  m0/a_hpos_6 (m0/a_hpos_6)
+     LUT4:I0->O            5   0.203   0.962  m0/cd6/position[19]_GND_11_o_add_15_OUT<7>1 (m0/cd2/Mcompar_e_position[19]_position[19]_LessThan_17_o_lutdi3)
+     LUT4:I0->O            0   0.203   0.000  m0/cd3/Mcompar_e_position[19]_position[19]_LessThan_17_o_lutdi3 (m0/cd3/Mcompar_e_position[19]_position[19]_LessThan_17_o_lutdi3)
+     MUXCY:DI->O           1   0.339   0.580  m0/cd3/Mcompar_e_position[19]_position[19]_LessThan_17_o_cy<3> (m0/cd3/Mcompar_e_position[19]_position[19]_LessThan_17_o_cy<3>)
+     LUT3:I2->O            1   0.205   0.580  m0/enemyCollideWire_enemyCollideWire5_OR_137_o5_SW0 (N54)
+     LUT6:I5->O            1   0.205   0.580  m0/enemyCollideWire_enemyCollideWire5_OR_137_o5 (m0/enemyCollideWire_enemyCollideWire5_OR_137_o5)
+     LUT6:I5->O            1   0.205   0.580  m0/enemyCollideWire_enemyCollideWire5_OR_137_o6 (m0/enemyCollideWire_enemyCollideWire5_OR_137_o6)
+     LUT6:I5->O            3   0.205   0.651  m0/enemyCollideWire_enemyCollideWire5_OR_137_o8 (m0/enemyCollideWire_enemyCollideWire5_OR_137_o8)
+     LUT3:I2->O           17   0.205   1.028  m0/enemyCollideWire_enemyCollideWire5_OR_137_o11_1 (m0/enemyCollideWire_enemyCollideWire5_OR_137_o11)
+     LUT5:I4->O            1   0.205   0.808  m0/Mmux_inputs[3]_inputs[3]_mux_40_OUT83 (m0/Mmux_inputs[3]_inputs[3]_mux_40_OUT82)
+     LUT6:I3->O            1   0.205   0.580  m0/Mmux_inputs[3]_inputs[3]_mux_40_OUT84 (m0/Mmux_inputs[3]_inputs[3]_mux_40_OUT83)
+     LUT6:I5->O            1   0.205   0.000  m0/Mmux_inputs[3]_inputs[3]_mux_40_OUT86 (m0/inputs[3]_inputs[3]_mux_40_OUT<7>)
+     FD:D                      0.102          m0/a_vpos_7
+    ----------------------------------------
+    Total                     11.090ns (2.934ns logic, 8.156ns route)
+                                       (26.5% logic, 73.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.785ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       count_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.133  rst_IBUF (rst_IBUF)
+     FDR:R                     0.430          count_0
+    ----------------------------------------
+    Total                      2.785ns (1.652ns logic, 1.133ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'count_1'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              2.785ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       hcount_0 (FF)
+  Destination Clock: count_1 rising
+
+  Data Path: rst to hcount_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.133  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.430          hcount_0
+    ----------------------------------------
+    Total                      2.785ns (1.652ns logic, 1.133ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'count_1'
+  Total number of paths / destination ports: 22 / 10
+-------------------------------------------------------------------------
+Offset:              5.740ns (Levels of Logic = 3)
+  Source:            vcount_5 (FF)
+  Destination:       vs (PAD)
+  Source Clock:      count_1 rising
+
+  Data Path: vcount_5 to vs
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.447   1.156  vcount_5 (vcount_5)
+     LUT4:I0->O            1   0.203   0.580  vs1_SW0 (N2)
+     LUT6:I5->O            1   0.205   0.579  vs1 (vs_OBUF)
+     OBUF:I->O                 2.571          vs_OBUF (vs)
+    ----------------------------------------
+    Total                      5.740ns (3.426ns logic, 2.314ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 146 / 8
+-------------------------------------------------------------------------
+Offset:              7.132ns (Levels of Logic = 4)
+  Source:            keyboard/key_byte_5 (FF)
+  Destination:       led<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: keyboard/key_byte_5 to led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             18   0.447   1.297  keyboard/key_byte_5 (keyboard/key_byte_5)
+     LUT4:I0->O            1   0.203   0.808  keyboard/Mmux_ascii53 (keyboard/Mmux_ascii52)
+     LUT6:I3->O            1   0.205   0.684  keyboard/Mmux_ascii54 (keyboard/Mmux_ascii53)
+     LUT5:I3->O            5   0.203   0.714  keyboard/Mmux_ascii55 (led_4_OBUF)
+     OBUF:I->O                 2.571          led_4_OBUF (led<4>)
+    ----------------------------------------
+    Total                      7.132ns (3.629ns logic, 3.503ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock a_hpos<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   11.260|         |         |         |
+clk_d/clk_0    |    4.938|         |         |         |
+count_1        |    6.186|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.898|         |         |         |
+clk2/clk_0     |    2.281|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk2/clk_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.046|         |         |         |
+clk2/clk_0     |   11.090|         |         |         |
+e_hpos2<5>     |    5.413|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_d/clk_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_d/clk_0    |    2.016|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock count_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   18.406|         |         |         |
+clk_d/clk_0    |   12.085|         |         |         |
+count_1        |   12.896|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock e_hpos2<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk2/clk_0     |    6.160|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.47 secs
+ 
+--> 
+
+Total memory usage is 277028 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  291 (   0 filtered)
+Number of infos    :   43 (   0 filtered)
+

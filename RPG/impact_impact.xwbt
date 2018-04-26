@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\impact.xsl
+OUTFILE=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG
+LICENSE=iMPACT
+USER_INFO=iMPACT

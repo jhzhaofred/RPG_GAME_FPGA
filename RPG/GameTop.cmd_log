@@ -1,0 +1,249 @@
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 "GameTop.ngc" GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 
+xst -intstyle ise -ifn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.xst" -ofn "X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/GameTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc vga_controller.ucf -p xc6slx16-csg324-3 GameTop.ngc GameTop.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o GameTop_map.ncd GameTop.ngd GameTop.pcf 
+par -w -intstyle ise -ol high -mt off GameTop_map.ncd GameTop.ncd GameTop.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml GameTop.twx GameTop.ncd -o GameTop.twr GameTop.pcf -ucf vga_controller.ucf 
+bitgen -intstyle ise -f GameTop.ut GameTop.ncd 

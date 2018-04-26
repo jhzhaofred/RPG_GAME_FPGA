@@ -1,0 +1,234 @@
+
+****** PlanAhead v14.2 (64-bit)
+  **** Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -235 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/pa.fromHdl.tcl}
+# create_project -name RPG -dir "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/planAhead_run_1" -part xc6slx16csg324-3
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "vga_controller.ucf" [current_fileset -constrset]
+Adding file 'X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/Ash.ngc}]
+# add_files [list {ipcore_dir/Grass.ngc}]
+# add_files [list {ipcore_dir/Enemy.ngc}]
+# add_files [list {ipcore_dir/flower.ngc}]
+# add_files [list {ipcore_dir/brick.ngc}]
+# set hdlfile [add_files [list {ipcore_dir/Grass.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/Grass_synth.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/flower_synth.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/flower.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/brick_synth.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/brick.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {collisionDetection.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Sprite_Sel.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Ranger.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Move_Module.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Keyboard_PS2.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/Enemy_synth.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/Enemy.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/Ash.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ipcore_dir/Ash_synth.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fonr_rom.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clk_div.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clk_250ms.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Background.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {vga.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {start_screen.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {GameTop.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top GameTop $srcset
+# add_files [list {vga_controller.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Ash.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Enemy.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/Grass.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/flower.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/house.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/brick.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Grass.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/flower.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/brick.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/collisionDetection.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/Sprite_Sel.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/Ranger.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/Move_Module.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/Keyboard_PS2.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Ash.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/fonr_rom.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/clk_div.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/clk_250ms.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/Background.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/start_screen.v" into library work
+Analyzing Verilog file "X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/GameTop.v" into library work
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Ash.ngc ...
+WARNING:NetListWriters:298 - No output is written to Ash.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Ash.edif ...
+ngc2edif: Total memory usage is 78424 kilobytes
+
+Reading core file 'X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Ash.ngc' for (cell view 'Ash', library 'work', file 'Ash.v')
+Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/Ash.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/Ash.edif]
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Enemy.ngc ...
+WARNING:NetListWriters:298 - No output is written to Enemy.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Enemy.edif ...
+ngc2edif: Total memory usage is 78424 kilobytes
+
+Reading core file 'X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ngc' for (cell view 'Enemy', library 'work', file 'Enemy.v')
+Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/Enemy.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/Enemy.edif]
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design Grass.ngc ...
+WARNING:NetListWriters:298 - No output is written to Grass.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Grass.edif ...
+ngc2edif: Total memory usage is 78232 kilobytes
+
+Reading core file 'X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Grass.ngc' for (cell view 'Grass', library 'work', file 'Grass.v')
+Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/Grass.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/Grass.edif]
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design flower.ngc ...
+WARNING:NetListWriters:298 - No output is written to flower.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file flower.edif ...
+ngc2edif: Total memory usage is 78040 kilobytes
+
+Reading core file 'X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/flower.ngc' for (cell view 'flower', library 'work', file 'flower.v')
+Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/flower.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/flower.edif]
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design brick.ngc ...
+WARNING:NetListWriters:298 - No output is written to brick.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file brick.edif ...
+ngc2edif: Total memory usage is 78424 kilobytes
+
+Reading core file 'X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/brick.ngc' for (cell view 'brick', library 'work', file 'brick.v')
+Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/brick.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-1304-ECE-PHO115-02/ngc2edif/brick.edif]
+Loading clock regions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Ash.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Ash.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Enemy.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Grass.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/Grass.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/flower.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/flower.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/flower.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/flower.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/brick.ncf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/ipcore_dir/brick.ncf]
+Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.ucf]
+Finished Parsing UCF File [X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/vga_controller.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: ddefc3e6
+open_rtl_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 582.734 ; gain = 162.473
+startgroup
+set_property package_pin T10 [get_ports {switch[7]}]
+endgroup
+save_design
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead
