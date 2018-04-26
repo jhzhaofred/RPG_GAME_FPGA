@@ -25,7 +25,7 @@ module Sprite_Sel(
 		endcase
 	end
 	always@(step) begin
-		hoffset <= have_inputs == 0 ? 0 : step%2 == 0 ? 0 : (voffset == 32 || voffset == 48) ? 16 : step == 3 ? 32 : 16;
-		walk = step == 1 ? walk + 1 : walk;
+		hoffset <= have_inputs == 1'b0 ? 1'b0 : step % 2 == 1'b0 ? 1'b0 : (voffset == 32 || voffset == 48) ? 16 : step == 3 ? 32 : 16;
+		walk = step == 1'b1 ? walk + 1'b1 : walk;
 	end
 endmodule

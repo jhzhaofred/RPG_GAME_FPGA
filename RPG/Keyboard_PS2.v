@@ -4,7 +4,8 @@ input					clk_in,
 input					rst_n_in,			
 input					key_clk,			
 input					key_data,				
-output	[7:0]		ascii			
+output	[7:0]		ascii,
+output key_break		
 );
  
 
@@ -57,7 +58,7 @@ always @ (posedge clk_in or negedge rst_n_in) begin
 	end
 end
  
-reg						key_break = 1'b0;   
+reg				key_break = 1'b0;   
 reg				[7:0]	key_byte = 1'b0;
 
 always @ (posedge clk_in or negedge rst_n_in) begin 

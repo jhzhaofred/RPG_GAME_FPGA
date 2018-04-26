@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-19T12:39:10</DateModified>
+  <DateModified>2018-04-23T22:31:18</DateModified>
   <ModuleName>vga_controller</ModuleName>
-  <SummaryTimeStamp>2018-04-01T20:05:43</SummaryTimeStamp>
-  <SavedFilePath>X:/EC551/RPG/iseconfig/vga_controller.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>X:/EC551/RPG\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-04-23T22:17:48</SummaryTimeStamp>
+  <SavedFilePath>X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG/iseconfig/vga_controller.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>X:/Desktop/EC 551 Labs/RPG_GAME_FPGA-master/RPG\</ImplementationReportsDirectory>
   <DateInitialized>2018-03-28T17:08:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

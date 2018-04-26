@@ -1,8 +1,8 @@
 INTSTYLE=impact
-INFILE=X:\EC551\RPG\impact.xsl
-OUTFILE=X:\EC551\RPG\impact.xsl
+INFILE=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\impact.xsl
+OUTFILE=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG\impact.xsl
 FAMILY=Single
 PART=Single
-WORKINGDIR=X:\EC551\RPG
+WORKINGDIR=X:\Desktop\EC 551 Labs\RPG_GAME_FPGA-master\RPG
 LICENSE=iMPACT
 USER_INFO=iMPACT

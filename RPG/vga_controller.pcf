@@ -1,10 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Tue Apr 03 17:08:08 2018
+// Written by: Map P.28xd on Mon Apr 23 22:33:57 2018
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "hs" LOCATE = SITE "N6" LEVEL 1;
-COMP "up" LOCATE = SITE "A8" LEVEL 1;
 COMP "vs" LOCATE = SITE "P7" LEVEL 1;
 COMP "clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "rst" LOCATE = SITE "T5" LEVEL 1;
@@ -16,9 +15,6 @@ COMP "g<2>" LOCATE = SITE "V6" LEVEL 1;
 COMP "r<0>" LOCATE = SITE "U7" LEVEL 1;
 COMP "r<1>" LOCATE = SITE "V7" LEVEL 1;
 COMP "r<2>" LOCATE = SITE "N7" LEVEL 1;
-COMP "left" LOCATE = SITE "C4" LEVEL 1;
-COMP "down" LOCATE = SITE "C9" LEVEL 1;
-COMP "right" LOCATE = SITE "D9" LEVEL 1;
 COMP "led<0>" LOCATE = SITE "U16" LEVEL 1;
 COMP "led<1>" LOCATE = SITE "V16" LEVEL 1;
 COMP "led<2>" LOCATE = SITE "U15" LEVEL 1;
