@@ -125,19 +125,133 @@
 <msg type="warning" file="HDLCompiler" num="91" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\Sprite_Sel.v" Line 29: Signal &lt;<arg fmt="%s" index="1">walk</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 23: Using initial value of <arg fmt="%s" index="1">hp_xpos</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 24: Using initial value of <arg fmt="%s" index="1">hp_xpos</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 24: Using initial value of <arg fmt="%s" index="1">hp_ypos</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 25: Using initial value of <arg fmt="%s" index="1">hp_ypos</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 31: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 27: Using initial value of <arg fmt="%s" index="1">pp_xpos</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\ipcore_dir\BattleThing.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">BattleThing</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 28: Using initial value of <arg fmt="%s" index="1">pp_ypos</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 36: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 30: Using initial value of <arg fmt="%s" index="1">bp_xpos</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 31: Using initial value of <arg fmt="%s" index="1">bp_ypos</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 33: Using initial value of <arg fmt="%s" index="1">a_vpos</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 34: Using initial value of <arg fmt="%s" index="1">a_hpos</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 36: Using initial value of <arg fmt="%s" index="1">e_vpos</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 37: Using initial value of <arg fmt="%s" index="1">e_hpos</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 76: Using initial value of <arg fmt="%s" index="1">test</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 77: Using initial value of <arg fmt="%s" index="1">test1</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 78: Using initial value of <arg fmt="%s" index="1">test2</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 79: Using initial value of <arg fmt="%s" index="1">test3</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 80: Using initial value of <arg fmt="%s" index="1">test4</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 81: Using initial value of <arg fmt="%s" index="1">test5</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 40: Assignment to <arg fmt="%s" index="1">PHP</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 41: Assignment to <arg fmt="%s" index="1">EHP</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 45: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">6</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\ipcore_dir\WeaponAndHeart.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">WeaponAndHeart</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 50: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 56: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 62: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 67: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">12</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 73: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">12</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\BtoD.v" Line 6: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\BtoD.v" Line 7: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\BtoD.v" Line 8: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 105: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 106: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 107: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 110: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 111: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 112: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 117: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 118: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 119: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 120: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 125: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 126: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 127: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\battle_screen.v" Line 128: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\GameTop.v" Line 69: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">HP</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">7</arg>-bit.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"\\ad\eng\users\j\i\jiahao1\EC551\RPG_GAME_FPGA-master\RPG_GAME_FPGA-master\RPG\GameTop.v" Line 38: Net &lt;<arg fmt="%s" index="1">r3[2]</arg>&gt; does not have a driver.
@@ -197,7 +311,7 @@
 <msg type="warning" file="Xst" num="3035" delta="old" >Index value(s) does not match array range for signal &lt;<arg fmt="%s" index="1">collisionMatrix</arg>&gt;, simulation mismatch.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">switch</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">HP</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">voffset_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SEL0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -994,21 +1108,6 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/vcount_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/vcount_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/vcount_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/vcount_5&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/vcount_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/vcount_6&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/vcount_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/vcount_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/vcount_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/vcount_8&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/vcount_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/vcount_9&gt; </arg>
-</msg>
-
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/hcount_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/hcount_0&gt; </arg>
 </msg>
 
@@ -1016,21 +1115,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/hcount_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/hcount_2&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/hcount_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/hcount_5&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/hcount_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/hcount_6&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/hcount_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/hcount_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/hcount_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/hcount_8&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/hcount_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/hcount_9&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga1/count_0&gt; </arg>
@@ -1048,10 +1132,40 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/vcount_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/vcount_2&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/vcount_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/vcount_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/vcount_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/vcount_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/vcount_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/vcount_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/vcount_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/vcount_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s0/vcount_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bs0/vcount_9&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/hcount_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/hcount_3&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/hcount_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/hcount_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/hcount_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/hcount_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/hcount_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/hcount_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/hcount_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/hcount_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/hcount_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/hcount_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">bs0/hcount_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">GameTop</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s0/hcount_9&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

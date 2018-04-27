@@ -118,7 +118,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1524782729" xil_pn:in_ck="-812176840515179884" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-848595839162260783" xil_pn:start_ts="1524782727">
+    <transform xil_pn:end_ts="1524864132" xil_pn:in_ck="-468359227738614516" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-848595839162260783" xil_pn:start_ts="1524864130">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/Ash.ngc"/>
@@ -133,6 +133,9 @@
       <outfile xil_pn:name="ipcore_dir/Grass.ngc"/>
       <outfile xil_pn:name="ipcore_dir/Grass.v"/>
       <outfile xil_pn:name="ipcore_dir/Grass_synth.v"/>
+      <outfile xil_pn:name="ipcore_dir/WeaponAndHeart.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/WeaponAndHeart.v"/>
+      <outfile xil_pn:name="ipcore_dir/WeaponAndHeart_synth.v"/>
       <outfile xil_pn:name="ipcore_dir/brick.ngc"/>
       <outfile xil_pn:name="ipcore_dir/brick.v"/>
       <outfile xil_pn:name="ipcore_dir/brick_synth.v"/>
@@ -156,7 +159,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1524783369" xil_pn:in_ck="-1521491850735871955" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8550551949410676608" xil_pn:start_ts="1524783336">
+    <transform xil_pn:end_ts="1524871709" xil_pn:in_ck="1961995747271944151" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="8550551949410676608" xil_pn:start_ts="1524871663">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -178,7 +181,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1524783376" xil_pn:in_ck="-2739361045642292305" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6608948473287061870" xil_pn:start_ts="1524783369">
+    <transform xil_pn:end_ts="1524871716" xil_pn:in_ck="-2820571157495189835" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6608948473287061870" xil_pn:start_ts="1524871709">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GameTop.bld"/>
@@ -187,7 +190,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1524783413" xil_pn:in_ck="-2912585919592890583" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1524783376">
+    <transform xil_pn:end_ts="1524871744" xil_pn:in_ck="-2912585919592890583" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1524871716">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GameTop.pcf"/>
@@ -200,7 +203,7 @@
       <outfile xil_pn:name="GameTop_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1524783462" xil_pn:in_ck="3132594587375022107" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1524783413">
+    <transform xil_pn:end_ts="1524871793" xil_pn:in_ck="3132594587375022107" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1524871744">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GameTop.ncd"/>
@@ -214,7 +217,7 @@
       <outfile xil_pn:name="GameTop_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1524783476" xil_pn:in_ck="9053579284755207316" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1524783462">
+    <transform xil_pn:end_ts="1524871806" xil_pn:in_ck="9053579284755207316" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1524871793">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -227,7 +230,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1524783476" xil_pn:in_ck="-4319421205310820632" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1524783476">
+    <transform xil_pn:end_ts="1524871807" xil_pn:in_ck="-4319421205310820632" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1524871806">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -239,7 +242,7 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1524783462" xil_pn:in_ck="-916948751726013663" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1524783454">
+    <transform xil_pn:end_ts="1524871793" xil_pn:in_ck="-916948751726013663" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1524871786">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="GameTop.twr"/>
