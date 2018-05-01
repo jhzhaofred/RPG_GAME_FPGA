@@ -32,3 +32,4 @@ NET "keyinput" PULLUP;
 # PlanAhead Generated physical constraints 
 
 NET "switch[7]" LOC = T10;
+NET "switch[6]" LOC = T9;

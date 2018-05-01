@@ -8,7 +8,9 @@ module Move_Module(
 	input [19:0] e_position5,
 	input clk,
 	input [3:0] inputs,
+	input win,
 	output reg enemyCollide,
+	output reg [2:0] CON,
 	output [19:0] newPosition
     );
 	 
@@ -42,20 +44,34 @@ module Move_Module(
 	collisionDetection		cd4({a_hpos, a_vpos}, e_position3, enemyCollideWire3);
 	collisionDetection		cd5({a_hpos, a_vpos}, e_position4, enemyCollideWire4);
 	collisionDetection		cd6({a_hpos, a_vpos}, e_position5, enemyCollideWire5);
-
+	
+//	assign CON = !win ? 0 : 
+//					 enemyCollideWire1 ? 1 : 
+//					 enemyCollideWire2 ? 2 : 
+//					 enemyCollideWire3 ? 3 : 
+//					 enemyCollideWire4 ? 4 : 5;
 	
 	assign anyEnemyUp    = (enemyCollideWire1 == 3'd1) || (enemyCollideWire2 == 3'd1) || (enemyCollideWire3 == 3'd1) || (enemyCollideWire4 == 3'd1) || (enemyCollideWire5 == 3'd1);
 	assign anyEnemyDown  = (enemyCollideWire1 == 3'd2) || (enemyCollideWire2 == 3'd2) || (enemyCollideWire3 == 3'd2) || (enemyCollideWire4 == 3'd2) || (enemyCollideWire5 == 3'd2);
 	assign anyEnemyLeft  = (enemyCollideWire1 == 3'd3) || (enemyCollideWire2 == 3'd3) || (enemyCollideWire3 == 3'd3) || (enemyCollideWire4 == 3'd3) || (enemyCollideWire5 == 3'd3);
 	assign anyEnemyRight = (enemyCollideWire1 == 3'd4) || (enemyCollideWire2 == 3'd4) || (enemyCollideWire3 == 3'd4) || (enemyCollideWire4 == 3'd4) || (enemyCollideWire5 == 3'd4);
 	
+//	always@(enemyCollideWire1 or enemyCollideWire2 or enemyCollideWire3 or enemyCollideWire4 or enemyCollideWire5) begin
+//		CON <= 	 enemyCollideWire1 ? 1 : 
+//					 enemyCollideWire2 ? 2 : 
+//					 enemyCollideWire3 ? 3 : 
+//					 enemyCollideWire4 ? 4 : 
+//					 enemyCollideWire5 ? 5 : CON;
+//	end
+	
 	always@(posedge clk) begin
 		//If enemyCollide, then move back to where you were
+					 
 		case(inputs)
-				4'b1000: a_vpos <= (wallCollide1 || anyEnemyUp) ? a_vpos : a_vpos - 3'd2; // up
-				4'b0100: a_vpos <= (wallCollide3 || anyEnemyDown) ? a_vpos : a_vpos + 3'd2; // down
-				4'b0010: a_hpos <= (wallCollide4 || anyEnemyLeft) ? a_hpos : a_hpos - 3'd2; //left
-				4'b0001: a_hpos <= (wallCollide2 || anyEnemyRight) ? a_hpos : a_hpos + 3'd2; //right
+				4'b1000: a_vpos <= wallCollide1 ? a_vpos : anyEnemyUp ? a_vpos  + 3'd2   : a_vpos - 3'd2; // up
+				4'b0100: a_vpos <= wallCollide3 ? a_vpos : anyEnemyDown ? a_vpos - 3'd2  : a_vpos + 3'd2; // down
+				4'b0010: a_hpos <= wallCollide4 ? a_hpos : anyEnemyLeft ? a_hpos + 3'd2  : a_hpos - 3'd2; //left
+				4'b0001: a_hpos <= wallCollide2 ? a_hpos : anyEnemyRight ? a_hpos - 3'd2 : a_hpos + 3'd2; //right
 		endcase
 		if(anyEnemyUp || anyEnemyDown || anyEnemyLeft || anyEnemyRight) begin
 			enemyCollide <= 1'b1;
@@ -65,5 +81,11 @@ module Move_Module(
 			//No enemy collides,
 			enemyCollide <= 1'b0;
 		end
+		
+		CON = 	 enemyCollideWire1 ? 1 : 
+					 enemyCollideWire2 ? 2 : 
+					 enemyCollideWire3 ? 3 : 
+					 enemyCollideWire4 ? 4 : 
+					 enemyCollideWire5 ? 5 : CON;
 	end
 endmodule

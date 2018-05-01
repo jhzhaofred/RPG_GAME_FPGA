@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.28xd on Fri Apr 27 19:29:01 2018
+// Written by: Map P.28xd on Tue May 01 01:47:37 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -25,6 +25,7 @@ COMP "led<7>" LOCATE = SITE "T11" LEVEL 1;
 COMP "vs" LOCATE = SITE "P7" LEVEL 1;
 COMP "keyclk" LOCATE = SITE "L12" LEVEL 1;
 COMP "keyinput" LOCATE = SITE "J13" LEVEL 1;
+COMP "switch<6>" LOCATE = SITE "T9" LEVEL 1;
 COMP "switch<7>" LOCATE = SITE "T10" LEVEL 1;
 SCHEMATIC END;
 

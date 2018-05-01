@@ -2,13 +2,13 @@
         
     module vga_controller(    
         input clk,   
-		  input keyclk,		  
-		  input keyinput,
+		  input clk_1s,
         input rst,
         output reg [2:0] r,    
         output reg [2:0] g,    
         output reg [1:0] b,
-		  output [7:0] led,
+		  input [7:0] led,
+		  input win,
         output hs,    
         output vs,
 		  output enemyCollide
@@ -23,19 +23,38 @@
 		  wire [2:0] red, green;
 		  wire [1:0] blue;
 		  reg [9:0] hcount, vcount; 
-		  reg [9:0] a_hpos, a_vpos, e_hpos, e_vpos, e_hpos2, e_vpos2, e_hpos3, e_vpos3, e_hpos4, e_vpos4, e_hpos5, e_vpos5;
+		  reg [9:0] a_hpos, a_vpos;
+//		  e_hpos, e_vpos, e_hpos2, e_vpos2, e_hpos3, e_vpos3, e_hpos4, e_vpos4, e_hpos5, e_vpos5;
+		  
+		  reg [9:0] e_hpos = 368;
+		  reg [9:0] e_vpos = 127; 
+
+		//Ranger 2
+		  reg [9:0] e_hpos2 = 672;
+		  reg [9:0] e_vpos2 = 127;
+		
+		//Ranger 3
+		  reg [9:0] e_hpos3 = 624;
+		  reg [9:0] e_vpos3 = 329;
+		
+		//Ranger 4
+		  reg [9:0] e_hpos4 = 256;
+		  reg [9:0] e_vpos4 = 447;
+		
+		//Ranger 5
+		  reg [9:0] e_hpos5 = 368;
+		  reg [9:0] e_vpos5 = 383;
 		  
 		  wire pclk;
 		  assign pclk = count[1];
 		  wire [8:0] voffset, hoffset, e_voffset, e_hoffset;
-		  wire key_break;
         
 		  assign vs = (vcount < 2) ? 1'b0 : 1'b1;
 		  
 		  reg [1:0] step = 0;		  
         reg [1:0] count;		  
         
-		  wire clk_1s, clk_0;
+		  wire clk_0;
 		  
 		  //Sprite Select Wires and Memory Modules
 		  wire display_ash, display_enemy, display_enemy2, display_enemy3, display_enemy4, display_enemy5;
@@ -79,10 +98,10 @@
 			  .douta(EnemyData5) // output [31 : 0] AshData
 			);
 					
-		  //Direction Control from Keyboard
-		  Keyboard_PS2 					keyboard(clk, 1, keyclk, keyinput, led, key_break);
+		  
 		  
 		  wire kleft, kright, kup, kdown;
+		  wire [2:0] CON;
 		  assign kleft = led == 8'h6b ? 1'b1 : 1'b0;
 		  assign kright = led == 8'h74 ? 1'b1 : 1'b0;
 		  assign kup = led == 8'h75 ? 1'b1 : 1'b0;
@@ -90,7 +109,11 @@
 		  
 		  //Player and enemy position
 		  wire [19:0] position, e_position, e_position2, e_position3, e_position4, e_position5;
-		  
+		  assign e_position = {e_hpos, e_vpos};
+		  assign e_position2 = {e_hpos2, e_vpos2};
+		  assign e_position3 = {e_hpos3, e_vpos3};
+		  assign e_position4 = {e_hpos4, e_vpos4};
+		  assign e_position5 = {e_hpos5, e_vpos5};
 		  //Sprite Display Control
 		  assign display_ash = (hcount - a_hpos <= 16 && hcount - a_hpos > 0 && vcount - a_vpos >= 0 && vcount - a_vpos < 16);
 		  assign display_enemy = (hcount - e_hpos <= 16 && hcount - e_hpos > 0 && vcount - e_vpos >= 0 && vcount - e_vpos < 16);
@@ -100,7 +123,7 @@
 		  assign display_enemy5 = (hcount - e_hpos5 <= 16 && hcount - e_hpos5 > 0 && vcount - e_vpos5 >= 0 && vcount - e_vpos5 < 16);
 		      
 		  //Clock Dividers
-		  clk_div_1s 						clk_d(clk, clk_1s);
+		  
 		  clk_250ms							clk2(clk,clk_0);
 		  
 		  
@@ -130,23 +153,18 @@
 		  //wire enemyCollide;
 		
 		  //Move Player Module
-		  Move_Module m0(e_position, e_position2, e_position3, e_position4, e_position5, clk_0, {kup,kdown,kleft,kright}, enemyCollide, newPosition);
+		  Move_Module m0(e_position, e_position2, e_position3, e_position4, e_position5, clk_0, {kup,kdown,kleft,kright}, win, enemyCollide, CON, newPosition);
 		  
-		  //Enemies
-		  Ranger r0(clk_1s, 3'b001, rangering, e_position);
-		  Ranger r1(clk_1s, 3'b010, rangering, e_position2);
-		  Ranger r2(clk_1s, 3'b011, rangering, e_position3);
-		  Ranger r3(clk_1s, 3'b100, rangering, e_position4);
-		  Ranger r4(clk_1s, 3'b101, rangering, e_position5);
 		  
 		   //Update Player and Enemy Position
 		  always@(posedge clk) begin
 				{a_hpos, a_vpos} <= newPosition;
-				{e_hpos, e_vpos} <= e_position;
-				{e_hpos2, e_vpos2} <= e_position2;
-				{e_hpos3, e_vpos3} <= e_position3;
-				{e_hpos4, e_vpos4} <= e_position4;
-				{e_hpos5, e_vpos5} <= e_position5;
+				
+				{e_hpos, e_vpos} <= CON == 1 ? 20'b0 : {e_hpos, e_vpos};
+				{e_hpos2, e_vpos2} <= CON == 2 ? 20'b0 : {e_hpos2, e_vpos2};
+				{e_hpos3, e_vpos3} <= CON == 3 ? 20'b0 : {e_hpos3, e_vpos3};
+				{e_hpos4, e_vpos4} <= CON == 4 ? 20'b0 : {e_hpos4, e_vpos4};
+				{e_hpos5, e_vpos5} <= CON == 5 ? 20'b0 : {e_hpos5, e_vpos5};
 		  end
 		  
 		  //Display Select

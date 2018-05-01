@@ -1,7 +1,7 @@
   
 `timescale 1ns / 1ps    
         
- module start_screen(    
+ module win_screen(    
 	  input clk,    
 	  input rst,
 	  output reg [2:0] r,    
@@ -16,7 +16,7 @@
 	  parameter LEFT_BOUND = 144;    
 	  parameter RIGHT_BOUND = 783;    
 	  
-	  parameter TITLE = "RPG ESCAPE";
+	  parameter TITLE = "YOU  WIN!!";
 	  reg [79:0] title = TITLE;
 	  
 	  reg h_speed, v_speed;    

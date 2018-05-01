@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-27T15:48:28</DateModified>
+  <DateModified>2018-05-01T00:15:53</DateModified>
   <ModuleName>GameTop</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/iseconfig/GameTop.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG\</ImplementationReportsDirectory>
+  <SavedFilePath>X:/Downloads/RPG/iseconfig/GameTop.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>X:/Downloads/RPG\</ImplementationReportsDirectory>
   <DateInitialized>2018-04-24T10:01:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

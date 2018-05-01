@@ -9,18 +9,26 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/GE_Test_Acc X:|EC551|RPG_GAME_FPGA-master|RPG_GAME_FPGA-master|RPG|GE_Test_Acc.v</ClosedNode>
          <ClosedNode>/GameTop X:|Desktop|EC 551 Labs|RPG_GAME_FPGA-master|RPG|GameTop.v/vga1 - vga_controller</ClosedNode>
-         <ClosedNode>/GameTop X:|EC551|RPG_GAME_FPGA-master|RPG_GAME_FPGA-master|RPG|GameTop.v</ClosedNode>
+         <ClosedNode>/GameTop X:|Downloads|RPG|GameTop.v/bs0 - basic_battle_screen</ClosedNode>
+         <ClosedNode>/GameTop X:|Downloads|RPG|GameTop.v/bs0 - battle_screen</ClosedNode>
+         <ClosedNode>/GameTop X:|Downloads|RPG|GameTop.v/s0 - start_screen</ClosedNode>
+         <ClosedNode>/GameTop X:|Downloads|RPG|GameTop.v/vga1 - vga_controller/Dis - Background</ClosedNode>
+         <ClosedNode>/GameTop X:|EC551|RPG_GAME_FPGA-master|RPG_GAME_FPGA-master|RPG|GameTop.v/bs0 - battle_screen</ClosedNode>
+         <ClosedNode>/GameTop X:|EC551|RPG_GAME_FPGA-master|RPG_GAME_FPGA-master|RPG|GameTop.v/s0 - start_screen</ClosedNode>
+         <ClosedNode>/GameTop X:|EC551|RPG_GAME_FPGA-master|RPG_GAME_FPGA-master|RPG|GameTop.v/vga1 - vga_controller</ClosedNode>
          <ClosedNode>/GameTop X:|EC551|RPG_GAME_FPGA-master|RPG_GAME_FPGA-master|RPG|GameTop.v/vga1 - vga_controller/Dis - Background</ClosedNode>
+         <ClosedNode>/Top_Module X:|Downloads|RPG|Top_Module.v</ClosedNode>
          <ClosedNode>/Top_Module X:|EC551|RPG_GAME_FPGA-master|RPG_GAME_FPGA-master|RPG|Top_Module.v</ClosedNode>
+         <ClosedNode>/battle_screen X:|Downloads|RPG|battle_screen.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - HP_module (X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/HP_module.v)</SelectedItem>
+         <SelectedItem>xc6slx16-3csg324</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000147000000020000000000000000000000000200000064ffffffff000000810000000300000002000001470000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a0000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a00000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - HP_module (X:/EC551/RPG_GAME_FPGA-master/RPG_GAME_FPGA-master/RPG/HP_module.v)</CurrentItem>
+      <CurrentItem>xc6slx16-3csg324</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -58,7 +66,7 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000001830000013901000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -66,6 +74,7 @@
          <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
@@ -81,13 +90,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View HDL Instantiation Template</SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000166000000010000000100000000000000000000000064ffffffff000000810000000000000001000001660000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View HDL Instantiation Template</CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
